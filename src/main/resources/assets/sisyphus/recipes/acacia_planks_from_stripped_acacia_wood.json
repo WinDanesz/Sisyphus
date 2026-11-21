@@ -1,0 +1,19 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "stripped_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:stripped_acacia_wood"
+        }
+    ],
+    "result": {
+        "item": "minecraft:planks",
+        "data": 4,
+        "count": 4
+    }
+}

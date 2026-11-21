@@ -1,0 +1,29 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "armor_trims"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DTD",
+        "DBD",
+        "DDD"
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "T": {
+            "item": "sisyphus:sentry_armor_trim_smithing_template"
+        },
+        "B": {
+            "item": "minecraft:cobblestone"
+        }
+    },
+    "result": {
+        "item": "sisyphus:sentry_armor_trim_smithing_template",
+        "count": 2
+    }
+}

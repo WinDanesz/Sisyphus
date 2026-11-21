@@ -1,0 +1,9 @@
+{
+    "parent": "sisyphus:block/orientable_with_bottom",
+    "textures": {
+        "bottom": "sisyphus:blocks/loom_bottom",
+        "front": "sisyphus:blocks/loom_front",
+        "side": "sisyphus:blocks/loom_side",
+        "top": "sisyphus:blocks/loom_top"
+    }
+}

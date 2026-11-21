@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "sisyphus:blocks/blackstone",
+        "top": "sisyphus:blocks/blackstone",
+        "side": "sisyphus:blocks/blackstone"
+    }
+}

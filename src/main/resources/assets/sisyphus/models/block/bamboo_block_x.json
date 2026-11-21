@@ -1,0 +1,7 @@
+{
+    "parent": "sisyphus:block/cube_column_uv_locked_x",
+    "textures": {
+        "end": "sisyphus:blocks/bamboo_block_top",
+        "side": "sisyphus:blocks/bamboo_block"
+    }
+}

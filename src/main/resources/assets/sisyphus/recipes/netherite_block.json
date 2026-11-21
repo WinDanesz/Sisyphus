@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "netherite"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:netherite_ingot"
+        }
+    },
+    "result": {
+        "item": "sisyphus:netherite_block",
+        "count": 1
+    }
+}

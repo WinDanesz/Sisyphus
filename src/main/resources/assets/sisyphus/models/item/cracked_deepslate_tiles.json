@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "sisyphus:blocks/cracked_deepslate_tiles",
+        "particle": "sisyphus:blocks/cracked_deepslate_tiles"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "flowers"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:dye",
+            "data": 15
+        }
+    ],
+    "result": {
+        "item": "sisyphus:white_dye",
+        "count": 1
+    }
+}

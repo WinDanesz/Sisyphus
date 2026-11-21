@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "sisyphus:blocks/bamboo_door_bottom",
+        "top": "sisyphus:blocks/bamboo_door_top"
+    }
+}

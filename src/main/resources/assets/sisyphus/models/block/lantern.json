@@ -1,0 +1,6 @@
+{
+    "parent": "sisyphus:block/template_lantern",
+    "textures": {
+        "lantern": "sisyphus:blocks/lantern"
+    }
+}

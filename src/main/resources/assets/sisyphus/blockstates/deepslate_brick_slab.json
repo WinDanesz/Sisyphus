@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:deepslate_brick_half_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:deepslate_brick_upper_slab"
+        }
+    }
+}

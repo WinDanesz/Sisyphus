@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "sisyphus:jungle_sign_particle"
+        },
+        "facing=south": {
+            "model": "sisyphus:jungle_sign_particle"
+        },
+        "facing=east": {
+            "model": "sisyphus:jungle_sign_particle"
+        },
+        "facing=west": {
+            "model": "sisyphus:jungle_sign_particle"
+        }
+    }
+}

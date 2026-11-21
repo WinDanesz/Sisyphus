@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "sisyphus:blocks/dark_oak_planks",
+        "east": "sisyphus:blocks/cartography_table_side3",
+        "north": "sisyphus:blocks/cartography_table_side3",
+        "particle": "sisyphus:blocks/cartography_table_side3",
+        "south": "sisyphus:blocks/cartography_table_side1",
+        "up": "sisyphus:blocks/cartography_table_top",
+        "west": "sisyphus:blocks/cartography_table_side2"
+    }
+}

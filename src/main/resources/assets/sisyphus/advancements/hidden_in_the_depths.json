@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "netherite"
+        }
+    ],
+    "parent": "minecraft:nether/root",
+    "display": {
+        "icon": {
+            "item": "sisyphus:ancient_debris"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.hidden_in_the_depths.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.hidden_in_the_depths.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

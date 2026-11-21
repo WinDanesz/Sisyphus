@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "sisyphus:blocks/stripped_oak_log",
+        "side": "sisyphus:blocks/stripped_oak_log"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "parent": "sisyphus:block/template_cake_with_candle",
+    "textures": {
+        "bottom": "sisyphus:blocks/cake_bottom",
+        "candle": "sisyphus:blocks/brown_candle_lit",
+        "particle": "sisyphus:blocks/cake_side",
+        "side": "sisyphus:blocks/cake_side",
+        "top": "sisyphus:blocks/cake_top"
+    }
+}

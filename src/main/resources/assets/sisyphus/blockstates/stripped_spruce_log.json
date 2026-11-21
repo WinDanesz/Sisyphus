@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "sisyphus:stripped_spruce_log"
+        },
+        "axis=z": {
+            "model": "sisyphus:stripped_spruce_log",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "sisyphus:stripped_spruce_log",
+            "x": 90,
+            "y": 90
+        },
+        "axis=none": {
+            "model": "sisyphus:stripped_spruce_log"
+        }
+    }
+}

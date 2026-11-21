@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "amethyst"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " S ",
+        "SGS",
+        " S "
+    ],
+    "key": {
+        "S": {
+            "item": "sisyphus:amethyst_shard"
+        },
+        "G": {
+            "item": "minecraft:glass"
+        }
+    },
+    "result": {
+        "item": "sisyphus:tinted_glass",
+        "count": 2
+    }
+}

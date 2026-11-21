@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "piglin"
+        }
+    ],
+    "parent": "minecraft:nether/root",
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.oh_shiny.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.oh_shiny.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

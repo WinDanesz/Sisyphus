@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "sisyphus:jungle_hanging_sign"
+        },
+        "facing=east": {
+            "model": "sisyphus:jungle_hanging_sign"
+        },
+        "facing=south": {
+            "model": "sisyphus:jungle_hanging_sign"
+        },
+        "facing=west": {
+            "model": "sisyphus:jungle_hanging_sign"
+        }
+    }
+}

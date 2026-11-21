@@ -1,0 +1,18 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "blackstone"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:polished_blackstone"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:polished_blackstone_button",
+        "count": 1
+    }
+}

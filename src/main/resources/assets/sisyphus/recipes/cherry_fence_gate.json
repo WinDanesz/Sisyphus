@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "cherry_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "S#S",
+        "S#S"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:cherry_planks"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "sisyphus:cherry_fence_gate",
+        "count": 1
+    },
+    "group": "wooden_fence_gate"
+}

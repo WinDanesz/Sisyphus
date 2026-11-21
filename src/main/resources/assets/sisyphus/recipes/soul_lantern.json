@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "soul_fire"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NNN",
+        "NTN",
+        "NNN"
+    ],
+    "key": {
+        "N": {
+            "item": "minecraft:iron_nugget"
+        },
+        "T": {
+            "item": "sisyphus:soul_torch"
+        }
+    },
+    "result": {
+        "item": "sisyphus:soul_lantern",
+        "count": 1
+    }
+}

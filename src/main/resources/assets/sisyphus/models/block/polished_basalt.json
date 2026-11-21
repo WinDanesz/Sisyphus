@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "sisyphus:blocks/polished_basalt_top",
+        "side": "sisyphus:blocks/polished_basalt_side"
+    }
+}

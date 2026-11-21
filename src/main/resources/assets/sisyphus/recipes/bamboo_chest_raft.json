@@ -1,0 +1,21 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "bamboo_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:chest"
+        },
+        {
+            "item": "sisyphus:bamboo_raft"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:bamboo_chest_raft"
+    },
+    "group": "chest_boat"
+}

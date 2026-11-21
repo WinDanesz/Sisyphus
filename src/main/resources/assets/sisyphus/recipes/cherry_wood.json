@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "cherry_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:cherry_log"
+        }
+    },
+    "result": {
+        "item": "sisyphus:cherry_wood",
+        "count": 3
+    }
+}

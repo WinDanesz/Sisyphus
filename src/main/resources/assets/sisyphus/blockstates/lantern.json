@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "hanging=false": {
+            "model": "sisyphus:lantern"
+        },
+        "hanging=true": {
+            "model": "sisyphus:lantern_hanging"
+        }
+    }
+}

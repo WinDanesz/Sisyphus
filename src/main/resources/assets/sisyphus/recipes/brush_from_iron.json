@@ -1,0 +1,37 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "archaeology"
+        },
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "sisyphus:ore_exists",
+                "ore": "ingotCopper"
+            }
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "F",
+        "I",
+        "S"
+    ],
+    "key": {
+        "F": {
+            "item": "minecraft:feather"
+        },
+        "I": {
+            "type": "forge:ore_dict",
+            "ore": "ingotIron"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "sisyphus:brush",
+        "count": 1
+    }
+}

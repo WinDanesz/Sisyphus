@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "sisyphus:acacia_sign_particle"
+        },
+        "facing=south": {
+            "model": "sisyphus:acacia_sign_particle"
+        },
+        "facing=east": {
+            "model": "sisyphus:acacia_sign_particle"
+        },
+        "facing=west": {
+            "model": "sisyphus:acacia_sign_particle"
+        }
+    }
+}

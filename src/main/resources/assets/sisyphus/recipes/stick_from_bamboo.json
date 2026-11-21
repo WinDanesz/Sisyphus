@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "bamboo"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:bamboo"
+        }
+    },
+    "result": {
+        "item": "minecraft:stick",
+        "count": 1
+    }
+}

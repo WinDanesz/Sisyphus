@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "axolotl"
+        }
+    ],
+    "parent": "sisyphus:the_cutest_predator",
+    "display": {
+        "icon": {
+            "item": "sisyphus:axolotl_bucket"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.the_healing_power_of_friendship.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.the_healing_power_of_friendship.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

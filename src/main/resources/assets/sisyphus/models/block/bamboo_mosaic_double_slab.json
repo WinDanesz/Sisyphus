@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "sisyphus:blocks/bamboo_mosaic",
+        "particle": "sisyphus:blocks/bamboo_mosaic"
+    }
+}

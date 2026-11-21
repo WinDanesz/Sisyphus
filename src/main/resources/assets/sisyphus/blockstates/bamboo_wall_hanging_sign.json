@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "sisyphus:bamboo_hanging_sign"
+        },
+        "facing=east": {
+            "model": "sisyphus:bamboo_hanging_sign"
+        },
+        "facing=south": {
+            "model": "sisyphus:bamboo_hanging_sign"
+        },
+        "facing=west": {
+            "model": "sisyphus:bamboo_hanging_sign"
+        }
+    }
+}

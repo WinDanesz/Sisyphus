@@ -1,0 +1,35 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "hanging_signs"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "chain"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "stripped_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X X",
+        "###",
+        "###"
+    ],
+    "key": {
+        "X": {
+            "item": "sisyphus:chain"
+        },
+        "#": {
+            "item": "sisyphus:stripped_jungle_log"
+        }
+    },
+    "result": {
+        "item": "sisyphus:jungle_hanging_sign",
+        "count": 6
+    },
+    "group": "hanging_sign"
+}

@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "normal": [
+            {
+                "model": "sisyphus:soul_fire_floor0"
+            },
+            {
+                "model": "sisyphus:soul_fire_floor1"
+            }
+        ]
+    }
+}

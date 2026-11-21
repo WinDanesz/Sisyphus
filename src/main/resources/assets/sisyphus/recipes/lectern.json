@@ -1,0 +1,28 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "lectern"
+        }
+    ],
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "SSS",
+        " B ",
+        " S "
+    ],
+    "key": {
+        "S": {
+            "type": "forge:ore_dict",
+            "ore": "slabWood"
+        },
+        "B": {
+            "type": "forge:ore_dict",
+            "ore": "bookshelf"
+        }
+    },
+    "result": {
+        "item": "sisyphus:lectern",
+        "count": 1
+    }
+}

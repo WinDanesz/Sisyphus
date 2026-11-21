@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "powered=false": {
+            "model": "sisyphus:bamboo_pressure_plate_up"
+        },
+        "powered=true": {
+            "model": "sisyphus:bamboo_pressure_plate_down"
+        }
+    }
+}

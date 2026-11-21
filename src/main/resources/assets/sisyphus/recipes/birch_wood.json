@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "stripped_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:log",
+            "data": 2
+        }
+    },
+    "result": {
+        "item": "sisyphus:birch_wood",
+        "count": 3
+    }
+}

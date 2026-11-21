@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "sisyphus:blocks/warped_planks",
+        "top": "sisyphus:blocks/warped_planks",
+        "side": "sisyphus:blocks/warped_planks"
+    }
+}

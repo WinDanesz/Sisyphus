@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "sisyphus:blocks/birch_planks",
+        "east": "sisyphus:blocks/fletching_table_side",
+        "north": "sisyphus:blocks/fletching_table_front",
+        "particle": "sisyphus:blocks/fletching_table_front",
+        "south": "sisyphus:blocks/fletching_table_front",
+        "up": "sisyphus:blocks/fletching_table_top",
+        "west": "sisyphus:blocks/fletching_table_side"
+    }
+}

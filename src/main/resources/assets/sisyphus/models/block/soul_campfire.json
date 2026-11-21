@@ -1,0 +1,7 @@
+{
+    "parent": "sisyphus:block/template_campfire",
+    "textures": {
+        "fire": "sisyphus:blocks/soul_fire_1",
+        "lit_log": "sisyphus:blocks/soul_campfire_log_lit"
+    }
+}

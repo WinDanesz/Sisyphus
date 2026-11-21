@@ -1,0 +1,293 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "archaeology"
+        }
+    ],
+    "parent": "minecraft:adventure/root",
+    "display": {
+        "icon": {
+            "item": "sisyphus:brush"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.respecting_the_remnants.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.respecting_the_remnants.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        },
+        "angler": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:angler_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "archer": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:archer_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "arms_up": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:arms_up_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "blade": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:blade_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "brewer": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:brewer_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "burn": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:burn_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "danger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:danger_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "explorer": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:explorer_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "friend": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:friend_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "heart": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:heart_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "heartbreak": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:heartbreak_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "howl": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:howl_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "miner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:miner_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "mourner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:mourner_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "plenty": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:plenty_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "prize": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:prize_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "sheaf": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:sheaf_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "shelter": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:shelter_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "skull": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:skull_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "snort": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:snort_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "wizard": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:wizard_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "dragon": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:dragon_pottery_sherd"
+                    }
+                ]
+            }
+        },
+        "full_moon": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sisyphus:full_moon_pottery_sherd"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "done"
+        ],
+        [
+            "angler",
+            "archer",
+            "arms_up",
+            "blade",
+            "brewer",
+            "burn",
+            "danger",
+            "explorer",
+            "friend",
+            "heart",
+            "heartbreak",
+            "howl",
+            "miner",
+            "mourner",
+            "plenty",
+            "prize",
+            "sheaf",
+            "shelter",
+            "skull",
+            "snort",
+            "wizard",
+            "dragon",
+            "full_moon"
+        ]
+    ]
+}

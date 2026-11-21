@@ -1,0 +1,38 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "soul_fire"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "campfire"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "soul_soil"
+        }
+    ],
+    "type": "forge:ore_shaped",
+    "pattern": [
+        " S ",
+        "SUS",
+        "LLL"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "U": {
+            "item": "sisyphus:soul_soil"
+        },
+        "L": {
+            "type": "forge:ore_dict",
+            "ore": "logWood"
+        }
+    },
+    "result": {
+        "item": "sisyphus:soul_campfire",
+        "count": 1
+    }
+}

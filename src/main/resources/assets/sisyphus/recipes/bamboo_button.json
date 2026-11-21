@@ -1,0 +1,18 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "bamboo_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:bamboo_planks"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:bamboo_button"
+    },
+    "group": "wooden_button"
+}

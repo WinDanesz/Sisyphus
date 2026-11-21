@@ -1,0 +1,25 @@
+name: 🐛 Bug Report
+description: Something is not working as expected
+title: "[Bug] "
+labels: [ "bug", "Needs Triage" ]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: What went wrong and how to make it happen again. Please check the latest version first.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Mod and Forge version
+      placeholder: Sisyphus 1.0.0, Forge 14.23.5.2860
+    validations:
+      required: true
+  - type: input
+    id: log
+    attributes:
+      label: Crash log / log link
+      description: If the game crashed, upload the newest file from `crash-reports/` (or `logs/latest.log`) to [mclo.gs](https://mclo.gs) and paste the public link here.
+      placeholder: https://mclo.gs/abc1234

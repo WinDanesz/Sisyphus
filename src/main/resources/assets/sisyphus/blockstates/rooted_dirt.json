@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "normal": [
+            {
+                "model": "sisyphus:rooted_dirt"
+            },
+            {
+                "model": "sisyphus:rooted_dirt",
+                "y": 90
+            },
+            {
+                "model": "sisyphus:rooted_dirt",
+                "y": 180
+            },
+            {
+                "model": "sisyphus:rooted_dirt",
+                "y": 270
+            }
+        ]
+    }
+}

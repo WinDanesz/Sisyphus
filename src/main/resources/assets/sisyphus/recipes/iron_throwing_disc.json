@@ -1,0 +1,24 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "throwing_disc"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " M ",
+        "M M",
+        " M "
+    ],
+    "key": {
+        "M": {
+            "type": "forge:ore_dict",
+            "ore": "ingotIron"
+        }
+    },
+    "result": {
+        "item": "sisyphus:iron_throwing_disc",
+        "count": 1
+    }
+}

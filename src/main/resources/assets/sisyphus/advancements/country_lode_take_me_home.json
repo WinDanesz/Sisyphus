@@ -1,0 +1,37 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "lodestone"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "netherite"
+        }
+    ],
+    "parent": "sisyphus:hidden_in_the_depths",
+    "display": {
+        "icon": {
+            "item": "sisyphus:lodestone"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.country_lode_take_me_home.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.country_lode_take_me_home.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

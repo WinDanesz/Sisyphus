@@ -1,0 +1,9 @@
+{
+    "parent": "sisyphus:block/orientable_with_bottom",
+    "textures": {
+        "bottom": "sisyphus:blocks/smoker_bottom",
+        "front": "sisyphus:blocks/smoker_front",
+        "side": "sisyphus:blocks/smoker_side",
+        "top": "sisyphus:blocks/smoker_top"
+    }
+}

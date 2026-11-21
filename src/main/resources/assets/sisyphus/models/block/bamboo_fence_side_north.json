@@ -1,0 +1,6 @@
+{
+    "parent": "sisyphus:block/custom_fence_side_north",
+    "textures": {
+        "texture": "sisyphus:blocks/bamboo_fence"
+    }
+}

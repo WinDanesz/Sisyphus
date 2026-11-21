@@ -1,0 +1,25 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "candles"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "S",
+        "W"
+    ],
+    "result": {
+        "item": "sisyphus:candle"
+    },
+    "key": {
+        "S": {
+            "item": "minecraft:string"
+        },
+        "W": {
+            "type": "forge:ore_dict",
+            "ore": "materialHoneycomb"
+        }
+    }
+}

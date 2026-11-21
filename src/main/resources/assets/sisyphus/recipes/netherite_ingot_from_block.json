@@ -1,0 +1,18 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "netherite"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:netherite_block"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:netherite_ingot",
+        "count": 9
+    }
+}

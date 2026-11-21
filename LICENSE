@@ -1,0 +1,138 @@
+Dan's Mods License (DML) 1.0
+
+Copyright (c) 2022-2026 WinDanesz and the contributors listed in
+CREDITS.md. All rights not expressly granted below are reserved.
+
+This license covers the source code, build scripts and original assets of
+the Mod, but not the third-party content described in section 4. The Mod
+is published at https://github.com/WinDanesz/Sisyphus. The "Author" is
+WinDanesz. "Official Releases" are the compiled builds of the Mod published
+by the Author on the Mod's official project pages.
+
+
+1. WHAT YOU MAY DO
+
+  a) Read, study, build and run the source code.
+
+  b) Fork the repository and publish your fork's source code, for example
+     on GitHub, as long as this license file stays with it unchanged.
+
+  c) Modify the Mod and build it for your own use, including on servers
+     you run and in modpacks that you do not publish.
+
+  d) Give a build of a modified Mod to the players of a server you run, so
+     they can play on it, or to a small group of people for testing. You
+     may send it directly or through the server's own channels, such as its
+     website, Discord or launcher, or in a modpack made for the server, as
+     long as neither the build nor the pack is listed on a mod hosting site
+     or offered to the public as a download.
+
+  e) Submit changes to the Mod, such as pull requests, issues with patches
+     or other code (see section 3).
+
+  f) Include unmodified Official Releases in a modpack, including a public
+     one, or point to them from it.
+
+  g) Use small portions of the code, such as single methods or techniques,
+     in your own distinct project, with credit to the Mod and its
+     contributors and a link to this repository, as long as that project
+     is not a substitute for the Mod or for one of its features as a whole.
+
+  h) Let an automated build service, such as GitHub Actions, build your
+     fork or your pull request and keep the builds as temporary build
+     artifacts of that service, for testing and review. This does not
+     allow attaching them to releases or linking to them as downloads.
+
+
+2. WHAT YOU MAY NOT DO
+
+  a) Publish a compiled build (such as a .jar file) of a modified version
+     of the Mod, or of a fork of it, anywhere the public can find or
+     download it. This covers mod hosting sites (such as CurseForge,
+     Modrinth and Planet Minecraft), launchers, mod portals, download sites
+     and release pages, including GitHub Releases. It also covers public
+     modpacks that contain such a build. The only exceptions are the cases
+     allowed by 1d and 1h.
+
+  b) Re-upload Official Releases on their own, outside a modpack, to any
+     site or service.
+
+  c) Publish the Mod, a fork of it, or a substantial part of it, under a
+     different name or as your own project, whether as a build or as a
+     project page on a mod hosting site.
+
+  d) Sell the Mod or a fork of it, or put access to it behind a payment.
+
+  e) Remove or change copyright notices, credits or this license.
+
+If you want to do any of the above, ask the Author. Permission is only
+given in writing, by the Author, and only for what it names.
+
+
+3. CONTRIBUTIONS
+
+Your contribution to the Mod (code, assets, translations or anything else)
+stays yours. You keep its copyright, you will be credited for it in
+CREDITS.md, and you may use what you wrote or made anywhere else, under any
+license you like.
+
+By submitting a contribution, you confirm that you have the right to submit
+it, and you grant the Author a perpetual, worldwide, non-exclusive,
+royalty-free, irrevocable license to use, modify, publish, distribute and
+sublicense it as part of the Mod or of another mod by the Author, for
+example when a feature moves into its own mod. The Author may license it
+only under this license, a later version of it that gives everyone at least
+the rights this version gives, or a license approved by the Open Source
+Initiative.
+
+
+4. THIRD-PARTY CONTENT
+
+The Mod contains content that is not the Author's and that this license
+does not cover:
+
+  a) Textures, sounds, models, language strings and other assets taken
+     from Minecraft, including those of its Programmer Art resource pack,
+     and the designs of the blocks, items, mobs and features the Mod
+     backports. These belong to Mojang Studios and Microsoft and are used
+     under their terms for Minecraft mods.
+
+  b) Works by other authors, which are credited in CREDITS.md or in the
+     files they appear in.
+
+The Author claims no ownership of that content, and this license grants no
+rights to it and places no restrictions on it beyond those its owners set.
+You must follow its owners' terms yourself. Sections 1 and 2 apply to the
+Mod's own code and original assets, and to builds of the Mod as a whole.
+
+
+5. IF THE MOD IS ABANDONED
+
+If two years pass in which the Author publishes no Official Release and no
+commit is added to the repository named above, the Mod's own code and
+original assets also become available under the GNU General Public
+License, version 3 (GPL-3.0). From then on, anyone may use the latest
+version of the Mod at that time, and any earlier version, under either this
+license or GPL-3.0. This cannot be withdrawn later, even if work on the Mod
+resumes. Versions published after that are under this license only, unless
+the Author says otherwise. Third-party content stays outside both licenses,
+as section 4 describes.
+
+
+6. TERMINATION
+
+Your rights under this license end automatically if you break it. They come
+back if you stop breaking it within 30 days of being told about it by the
+Author. This applies only the first time you break this license. After that,
+your rights come back only with the Author's written permission.
+
+
+7. NO WARRANTY
+
+THE MOD IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE MOD OR THE USE OF OR OTHER DEALINGS IN THE MOD. THIS
+INCLUDES ANY DAMAGE TO WORLDS, SAVES OR OTHER DATA.

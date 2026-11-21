@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "sisyphus:oak_hanging_sign"
+        },
+        "facing=east": {
+            "model": "sisyphus:oak_hanging_sign"
+        },
+        "facing=south": {
+            "model": "sisyphus:oak_hanging_sign"
+        },
+        "facing=west": {
+            "model": "sisyphus:oak_hanging_sign"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "sisyphus:birch_hanging_sign"
+        },
+        "facing=east": {
+            "model": "sisyphus:birch_hanging_sign"
+        },
+        "facing=south": {
+            "model": "sisyphus:birch_hanging_sign"
+        },
+        "facing=west": {
+            "model": "sisyphus:birch_hanging_sign"
+        }
+    }
+}

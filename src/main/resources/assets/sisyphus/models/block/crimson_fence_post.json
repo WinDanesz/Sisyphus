@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_post",
+    "textures": {
+        "texture": "sisyphus:blocks/crimson_planks"
+    }
+}

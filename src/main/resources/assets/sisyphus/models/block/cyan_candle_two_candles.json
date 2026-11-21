@@ -1,0 +1,7 @@
+{
+    "parent": "sisyphus:block/template_two_candles",
+    "textures": {
+        "all": "sisyphus:blocks/cyan_candle",
+        "particle": "sisyphus:blocks/cyan_candle"
+    }
+}

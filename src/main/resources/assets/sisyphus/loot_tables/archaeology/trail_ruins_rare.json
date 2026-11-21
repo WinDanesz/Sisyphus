@@ -1,0 +1,70 @@
+{
+    "pools": [
+        {
+            "name": "main",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "entryName": "burn_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:burn_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "danger_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:danger_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "friend_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:friend_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "heart_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:heart_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "heartbreak_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:heartbreak_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "howl_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:howl_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "sheaf_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:sheaf_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "wizard_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:wizard_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "dragon_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:dragon_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "full_moon_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:full_moon_pottery_sherd"
+                }
+            ]
+        }
+    ]
+}

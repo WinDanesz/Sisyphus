@@ -1,0 +1,18 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "flowers"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:lily_of_the_valley"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:white_dye",
+        "count": 1
+    }
+}

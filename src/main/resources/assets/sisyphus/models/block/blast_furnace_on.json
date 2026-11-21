@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "front": "sisyphus:blocks/blast_furnace_front_on",
+        "side": "sisyphus:blocks/blast_furnace_side",
+        "top": "sisyphus:blocks/blast_furnace_top"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "sisyphus:cherry_log"
+        },
+        "axis=z": {
+            "model": "sisyphus:cherry_log",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "sisyphus:cherry_log",
+            "x": 90,
+            "y": 90
+        },
+        "axis=none": {
+            "model": "sisyphus:cherry_log"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "berries=false": {
+            "model": "sisyphus:cave_vines"
+        },
+        "berries=true": {
+            "model": "sisyphus:cave_vines_lit"
+        }
+    }
+}

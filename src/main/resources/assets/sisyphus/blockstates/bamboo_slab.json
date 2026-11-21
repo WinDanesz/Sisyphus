@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:bamboo_half_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:bamboo_upper_slab"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "stripped_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:log",
+            "data": 3
+        }
+    },
+    "result": {
+        "item": "sisyphus:jungle_wood",
+        "count": 3
+    }
+}

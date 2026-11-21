@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "bamboo_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "W#W",
+        "W#W"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+        },
+        "W": {
+            "item": "sisyphus:bamboo_planks"
+        }
+    },
+    "result": {
+        "item": "sisyphus:bamboo_fence",
+        "count": 3
+    },
+    "group": "wooden_custom_fence"
+}

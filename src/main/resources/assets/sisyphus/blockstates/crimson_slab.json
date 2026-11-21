@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:crimson_half_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:crimson_upper_slab"
+        }
+    }
+}

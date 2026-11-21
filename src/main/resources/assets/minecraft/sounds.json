@@ -1,0 +1,37 @@
+{
+    "entity.zombie_pig.ambient": {
+        "replace": true,
+        "sounds": [
+            "sisyphus:mob/zombified_piglin/zpig1",
+            "sisyphus:mob/zombified_piglin/zpig2",
+            "sisyphus:mob/zombified_piglin/zpig3",
+            "sisyphus:mob/zombified_piglin/zpig4"
+        ],
+        "subtitle": "subtitles.entity.zombie_pigman.ambient"
+    },
+    "entity.zombie_pig.angry": {
+        "replace": true,
+        "sounds": [
+            "sisyphus:mob/zombified_piglin/zpigangry1",
+            "sisyphus:mob/zombified_piglin/zpigangry2",
+            "sisyphus:mob/zombified_piglin/zpigangry3",
+            "sisyphus:mob/zombified_piglin/zpigangry4"
+        ],
+        "subtitle": "subtitles.entity.zombie_pigman.angry"
+    },
+    "entity.zombie_pig.death": {
+        "replace": true,
+        "sounds": [
+            "sisyphus:mob/zombified_piglin/zpigdeath"
+        ],
+        "subtitle": "subtitles.entity.zombie_pigman.death"
+    },
+    "entity.zombie_pig.hurt": {
+        "replace": true,
+        "sounds": [
+            "sisyphus:mob/zombified_piglin/zpighurt1",
+            "sisyphus:mob/zombified_piglin/zpighurt2"
+        ],
+        "subtitle": "subtitles.entity.zombie_pigman.hurt"
+    }
+}

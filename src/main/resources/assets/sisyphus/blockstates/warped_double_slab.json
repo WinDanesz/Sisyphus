@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:warped_double_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:warped_double_slab"
+        }
+    }
+}

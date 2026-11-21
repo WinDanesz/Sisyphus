@@ -1,0 +1,6 @@
+{
+    "parent": "block/button",
+    "textures": {
+        "texture": "sisyphus:blocks/cherry_planks"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "workstations"
+        }
+    ],
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "II",
+        "PP",
+        "PP"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "P": {
+            "type": "forge:ore_dict",
+            "ore": "plankWood"
+        }
+    },
+    "result": {
+        "item": "sisyphus:smithing_table",
+        "count": 1
+    }
+}

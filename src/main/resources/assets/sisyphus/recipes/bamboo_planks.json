@@ -1,0 +1,24 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "bamboo_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        [
+            {
+                "item": "sisyphus:bamboo_block"
+            },
+            {
+                "item": "sisyphus:stripped_bamboo_block"
+            }
+        ]
+    ],
+    "result": {
+        "item": "sisyphus:bamboo_planks",
+        "count": 2
+    },
+    "group": "planks"
+}

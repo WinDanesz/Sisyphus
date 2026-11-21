@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "blackstone"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:polished_blackstone_bricks"
+        }
+    },
+    "result": {
+        "item": "sisyphus:polished_blackstone_brick_stairs",
+        "count": 4
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "variants": {
+        "age=0,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=0,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=1,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=1,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=2,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=2,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=3,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=3,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=4,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=4,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=5,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=5,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=6,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=6,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=7,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=7,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=8,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=8,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=9,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=9,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=10,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=10,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=11,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=11,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=12,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=12,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=13,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=13,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=14,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=14,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        },
+        "age=15,tip=true": {
+            "model": "sisyphus:twisting_vines"
+        },
+        "age=15,tip=false": {
+            "model": "sisyphus:twisting_vines_plant"
+        }
+    }
+}

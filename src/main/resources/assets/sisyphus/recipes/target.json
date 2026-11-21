@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "target"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " R ",
+        "RHR",
+        " R "
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "H": {
+            "item": "minecraft:hay_block"
+        }
+    },
+    "result": {
+        "item": "sisyphus:target",
+        "count": 1
+    }
+}

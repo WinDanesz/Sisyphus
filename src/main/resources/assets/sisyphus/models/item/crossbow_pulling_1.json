@@ -1,0 +1,6 @@
+{
+    "parent": "sisyphus:item/crossbow",
+    "textures": {
+        "layer0": "sisyphus:items/crossbow_pulling_1"
+    }
+}

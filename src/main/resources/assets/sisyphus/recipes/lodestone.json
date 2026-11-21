@@ -1,0 +1,31 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "lodestone"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "netherite"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SSS",
+        "SNS",
+        "SSS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stonebrick",
+            "data": 3
+        },
+        "N": {
+            "item": "sisyphus:netherite_ingot"
+        }
+    },
+    "result": {
+        "item": "sisyphus:lodestone",
+        "count": 1
+    }
+}

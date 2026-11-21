@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "sisyphus:crimson_stem"
+        },
+        "axis=z": {
+            "model": "sisyphus:crimson_stem",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "sisyphus:crimson_stem",
+            "x": 90,
+            "y": 90
+        },
+        "axis=none": {
+            "model": "sisyphus:crimson_stem"
+        }
+    }
+}

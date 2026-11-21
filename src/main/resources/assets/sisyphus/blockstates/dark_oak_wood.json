@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "sisyphus:dark_oak_wood"
+        },
+        "axis=z": {
+            "model": "sisyphus:dark_oak_wood",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "sisyphus:dark_oak_wood",
+            "x": 90,
+            "y": 90
+        },
+        "axis=none": {
+            "model": "sisyphus:dark_oak_wood"
+        }
+    }
+}

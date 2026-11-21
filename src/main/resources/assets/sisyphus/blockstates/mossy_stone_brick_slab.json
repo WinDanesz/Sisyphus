@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:mossy_stone_brick_half_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:mossy_stone_brick_upper_slab"
+        }
+    }
+}

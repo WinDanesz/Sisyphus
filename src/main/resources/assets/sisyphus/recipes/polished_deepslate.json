@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "deepslate"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:cobbled_deepslate"
+        }
+    },
+    "result": {
+        "item": "sisyphus:polished_deepslate",
+        "count": 4
+    }
+}

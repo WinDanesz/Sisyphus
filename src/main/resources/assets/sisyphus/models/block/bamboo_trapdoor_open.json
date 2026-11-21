@@ -1,0 +1,6 @@
+{
+    "parent": "sisyphus:block/template_orientable_trapdoor_open",
+    "textures": {
+        "texture": "sisyphus:blocks/bamboo_trapdoor"
+    }
+}

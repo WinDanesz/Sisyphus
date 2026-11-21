@@ -1,0 +1,24 @@
+// You may write any gradle buildscript component in this file
+// This file is automatically applied after build.gradle + dependencies.gradle is ran
+
+// If you wish to use the default helper methods, uncomment the line below
+// apply from: 'gradle/scripts/helpers.gradle'
+
+// Starts a dedicated server with CraftTweaker and the test scripts: ./gradlew serverSmokeTest
+apply from: 'gradle/scripts/server-smoke-test.gradle'
+
+def darkSplashScreen = tasks.register('darkSplashScreen') {
+	File splash = file('run/config/splash.properties')
+	doLast {
+		// Forge keeps keys already in the file when it rewrites it, so this only has to be set once
+		Properties props = new Properties()
+		if (splash.exists()) splash.withInputStream { props.load(it) }
+		if (props.getProperty('background') != '0x000000') {
+			props.setProperty('background', '0x000000')
+			splash.parentFile.mkdirs()
+			splash.withOutputStream { props.store(it, 'Splash screen properties') }
+		}
+	}
+}
+
+tasks.matching { it.name == 'runClient' }.configureEach { dependsOn darkSplashScreen }

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:andesite_double_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:andesite_double_slab"
+        }
+    }
+}

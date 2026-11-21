@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "sisyphus:blocks/mud_bricks",
+        "particle": "sisyphus:blocks/mud_bricks"
+    }
+}

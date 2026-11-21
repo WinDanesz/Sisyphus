@@ -1,0 +1,30 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "scaffolding"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "bamboo"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BSB",
+        "B B",
+        "B B"
+    ],
+    "key": {
+        "B": {
+            "item": "sisyphus:bamboo"
+        },
+        "S": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "sisyphus:scaffolding",
+        "count": 6
+    }
+}

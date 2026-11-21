@@ -1,0 +1,30 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "grindstone"
+        }
+    ],
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "STS",
+        "P P"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "T": {
+            "item": "minecraft:stone_slab",
+            "data": 0
+        },
+        "P": {
+            "type": "forge:ore_dict",
+            "ore": "plankWood"
+        }
+    },
+    "result": {
+        "item": "sisyphus:grindstone",
+        "count": 1
+    }
+}

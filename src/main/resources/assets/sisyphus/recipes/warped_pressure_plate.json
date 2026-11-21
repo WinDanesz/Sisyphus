@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:warped_planks"
+        }
+    },
+    "result": {
+        "item": "sisyphus:warped_pressure_plate",
+        "count": 1
+    },
+    "group": "wooden_pressure_plate"
+}

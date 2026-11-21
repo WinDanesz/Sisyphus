@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "dusted=0": {
+            "model": "sisyphus:suspicious_sand_0"
+        },
+        "dusted=1": {
+            "model": "sisyphus:suspicious_sand_1"
+        },
+        "dusted=2": {
+            "model": "sisyphus:suspicious_sand_2"
+        },
+        "dusted=3": {
+            "model": "sisyphus:suspicious_sand_3"
+        }
+    }
+}

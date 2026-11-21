@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "sisyphus:blocks/cherry_sapling"
+    }
+}

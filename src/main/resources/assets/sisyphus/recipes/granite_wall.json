@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "stone_variants"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone",
+            "data": 1
+        }
+    },
+    "result": {
+        "item": "sisyphus:granite_wall",
+        "count": 6
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "barrel"
+        }
+    ],
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "PSP",
+        "P P",
+        "PSP"
+    ],
+    "key": {
+        "P": {
+            "type": "forge:ore_dict",
+            "ore": "plankWood"
+        },
+        "S": {
+            "type": "forge:ore_dict",
+            "ore": "slabWood"
+        }
+    },
+    "result": {
+        "item": "sisyphus:barrel",
+        "count": 1
+    }
+}

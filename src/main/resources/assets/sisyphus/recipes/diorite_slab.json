@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "stone_variants"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone",
+            "data": 3
+        }
+    },
+    "result": {
+        "item": "sisyphus:diorite_slab",
+        "count": 6
+    }
+}

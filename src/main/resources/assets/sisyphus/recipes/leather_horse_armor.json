@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "horse_armor"
+        }
+    ],
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "L L",
+        "LLL",
+        "L L"
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:leather"
+        }
+    },
+    "result": {
+        "item": "sisyphus:leather_horse_armor",
+        "count": 1
+    }
+}

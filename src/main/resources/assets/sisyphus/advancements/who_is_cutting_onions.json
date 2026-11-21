@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "crying_obsidian"
+        }
+    ],
+    "parent": "minecraft:nether/root",
+    "display": {
+        "icon": {
+            "item": "sisyphus:crying_obsidian"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.who_is_cutting_onions.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.who_is_cutting_onions.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

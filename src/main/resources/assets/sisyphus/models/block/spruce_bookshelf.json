@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "minecraft:blocks/planks_spruce",
+        "side": "sisyphus:blocks/spruce_bookshelf"
+    }
+}

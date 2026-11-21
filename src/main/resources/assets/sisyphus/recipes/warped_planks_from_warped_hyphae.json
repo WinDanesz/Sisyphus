@@ -1,0 +1,19 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:warped_hyphae"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:warped_planks",
+        "count": 4
+    },
+    "group": "planks"
+}

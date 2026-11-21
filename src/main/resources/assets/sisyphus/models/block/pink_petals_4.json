@@ -1,0 +1,7 @@
+{
+    "parent": "sisyphus:block/flowerbed_4",
+    "textures": {
+        "flowerbed": "sisyphus:blocks/pink_petals",
+        "stem": "sisyphus:blocks/pink_petals_stem"
+    }
+}

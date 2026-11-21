@@ -1,0 +1,30 @@
+{
+    "variants": {
+        "facing=down": {
+            "model": "sisyphus:amethyst_cluster",
+            "x": 180
+        },
+        "facing=east": {
+            "model": "sisyphus:amethyst_cluster",
+            "x": 90,
+            "y": 90
+        },
+        "facing=north": {
+            "model": "sisyphus:amethyst_cluster",
+            "x": 90
+        },
+        "facing=south": {
+            "model": "sisyphus:amethyst_cluster",
+            "x": 90,
+            "y": 180
+        },
+        "facing=up": {
+            "model": "sisyphus:amethyst_cluster"
+        },
+        "facing=west": {
+            "model": "sisyphus:amethyst_cluster",
+            "x": 90,
+            "y": 270
+        }
+    }
+}

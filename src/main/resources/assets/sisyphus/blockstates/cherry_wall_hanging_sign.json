@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "sisyphus:cherry_hanging_sign"
+        },
+        "facing=east": {
+            "model": "sisyphus:cherry_hanging_sign"
+        },
+        "facing=south": {
+            "model": "sisyphus:cherry_hanging_sign"
+        },
+        "facing=west": {
+            "model": "sisyphus:cherry_hanging_sign"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "loom"
+        }
+    ],
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "SS",
+        "PP"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:string"
+        },
+        "P": {
+            "type": "forge:ore_dict",
+            "ore": "plankWood"
+        }
+    },
+    "result": {
+        "item": "sisyphus:loom",
+        "count": 1
+    }
+}

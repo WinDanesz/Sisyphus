@@ -1,0 +1,27 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "cartography_table"
+        }
+    ],
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "AA",
+        "PP",
+        "PP"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:paper"
+        },
+        "P": {
+            "type": "forge:ore_dict",
+            "ore": "plankWood"
+        }
+    },
+    "result": {
+        "item": "sisyphus:cartography_table",
+        "count": 1
+    }
+}

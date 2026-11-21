@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "basalt"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:basalt"
+        }
+    },
+    "result": {
+        "item": "sisyphus:polished_basalt",
+        "count": 4
+    }
+}

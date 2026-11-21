@@ -1,0 +1,24 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "prismarine"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:prismarine",
+            "data": 1
+        }
+    },
+    "result": {
+        "item": "sisyphus:prismarine_brick_stairs",
+        "count": 4
+    }
+}

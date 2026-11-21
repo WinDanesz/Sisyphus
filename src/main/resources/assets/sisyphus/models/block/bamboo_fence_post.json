@@ -1,0 +1,7 @@
+{
+    "parent": "sisyphus:block/custom_fence_post",
+    "textures": {
+        "particle": "sisyphus:blocks/bamboo_fence_particle",
+        "texture": "sisyphus:blocks/bamboo_fence"
+    }
+}

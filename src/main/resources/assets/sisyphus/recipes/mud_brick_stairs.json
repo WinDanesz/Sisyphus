@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "mud"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:mud_bricks"
+        }
+    },
+    "result": {
+        "item": "sisyphus:mud_brick_stairs",
+        "count": 4
+    }
+}

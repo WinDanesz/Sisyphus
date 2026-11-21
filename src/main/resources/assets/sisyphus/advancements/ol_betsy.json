@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "crossbow"
+        }
+    ],
+    "parent": "minecraft:adventure/root",
+    "display": {
+        "icon": {
+            "item": "sisyphus:crossbow"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.ol_betsy.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.ol_betsy.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

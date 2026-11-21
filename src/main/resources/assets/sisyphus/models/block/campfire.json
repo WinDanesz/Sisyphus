@@ -1,0 +1,7 @@
+{
+    "parent": "sisyphus:block/template_campfire",
+    "textures": {
+        "fire": "minecraft:blocks/fire_layer_1",
+        "lit_log": "sisyphus:blocks/campfire_log_lit"
+    }
+}

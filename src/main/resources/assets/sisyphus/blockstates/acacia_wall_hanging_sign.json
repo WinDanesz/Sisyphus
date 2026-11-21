@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "sisyphus:acacia_hanging_sign"
+        },
+        "facing=east": {
+            "model": "sisyphus:acacia_hanging_sign"
+        },
+        "facing=south": {
+            "model": "sisyphus:acacia_hanging_sign"
+        },
+        "facing=west": {
+            "model": "sisyphus:acacia_hanging_sign"
+        }
+    }
+}

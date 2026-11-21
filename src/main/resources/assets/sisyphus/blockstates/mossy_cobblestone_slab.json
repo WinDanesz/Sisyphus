@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:mossy_cobblestone_half_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:mossy_cobblestone_upper_slab"
+        }
+    }
+}

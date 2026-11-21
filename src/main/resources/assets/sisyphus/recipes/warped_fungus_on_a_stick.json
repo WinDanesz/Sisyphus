@@ -1,0 +1,25 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "strider"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_fungi"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:fishing_rod"
+        },
+        {
+            "item": "sisyphus:warped_fungus"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:warped_fungus_on_a_stick",
+        "count": 1
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "conditions": {
+        "content_enabled": "com.windanesz.sisyphus.recipe.ContentEnabledCondition",
+        "ore_exists": "com.windanesz.sisyphus.recipe.OreExistsCondition"
+    }
+}

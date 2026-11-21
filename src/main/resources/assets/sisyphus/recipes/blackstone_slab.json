@@ -1,0 +1,21 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "blackstone"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:blackstone"
+        }
+    },
+    "result": {
+        "item": "sisyphus:blackstone_slab",
+        "count": 6
+    }
+}

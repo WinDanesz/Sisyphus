@@ -1,0 +1,7 @@
+{
+    "parent": "block/fire_floor",
+    "textures": {
+        "particle": "sisyphus:blocks/soul_fire_0",
+        "fire": "sisyphus:blocks/soul_fire_0"
+    }
+}

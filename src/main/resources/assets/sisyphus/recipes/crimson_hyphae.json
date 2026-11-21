@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:crimson_stem"
+        }
+    },
+    "result": {
+        "item": "sisyphus:crimson_hyphae",
+        "count": 3
+    }
+}

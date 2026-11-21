@@ -1,0 +1,32 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "crossbow"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SIS",
+        "THT",
+        " S "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "T": {
+            "item": "minecraft:string"
+        },
+        "H": {
+            "item": "minecraft:tripwire_hook"
+        }
+    },
+    "result": {
+        "item": "sisyphus:crossbow",
+        "count": 1
+    }
+}

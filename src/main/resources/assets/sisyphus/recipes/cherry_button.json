@@ -1,0 +1,19 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "cherry_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:cherry_planks"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:cherry_button",
+        "count": 1
+    },
+    "group": "wooden_button"
+}

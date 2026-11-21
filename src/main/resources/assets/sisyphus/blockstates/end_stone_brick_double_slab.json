@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:end_stone_brick_double_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:end_stone_brick_double_slab"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:deepslate_tile_half_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:deepslate_tile_upper_slab"
+        }
+    }
+}

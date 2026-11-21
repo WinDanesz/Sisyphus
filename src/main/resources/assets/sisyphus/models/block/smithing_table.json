@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "sisyphus:blocks/smithing_table_bottom",
+        "east": "sisyphus:blocks/smithing_table_side",
+        "north": "sisyphus:blocks/smithing_table_front",
+        "particle": "sisyphus:blocks/smithing_table_front",
+        "south": "sisyphus:blocks/smithing_table_front",
+        "up": "sisyphus:blocks/smithing_table_top",
+        "west": "sisyphus:blocks/smithing_table_side"
+    }
+}

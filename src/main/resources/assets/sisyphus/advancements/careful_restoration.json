@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "archaeology"
+        }
+    ],
+    "parent": "sisyphus:respecting_the_remnants",
+    "display": {
+        "icon": {
+            "item": "sisyphus:decorated_pot"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.careful_restoration.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.careful_restoration.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

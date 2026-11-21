@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "sisyphus:blocks/polished_deepslate",
+        "top": "sisyphus:blocks/polished_deepslate",
+        "side": "sisyphus:blocks/polished_deepslate"
+    }
+}

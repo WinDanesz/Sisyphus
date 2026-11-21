@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:mud_brick_double_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:mud_brick_double_slab"
+        }
+    }
+}

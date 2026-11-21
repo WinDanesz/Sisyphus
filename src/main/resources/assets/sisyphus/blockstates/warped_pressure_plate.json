@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "powered=false": {
+            "model": "sisyphus:warped_pressure_plate_up"
+        },
+        "powered=true": {
+            "model": "sisyphus:warped_pressure_plate_down"
+        }
+    }
+}

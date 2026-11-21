@@ -1,0 +1,27 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "signs"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP",
+        "PPP",
+        " S "
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:planks",
+            "data": 3
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "sisyphus:jungle_sign",
+        "count": 3
+    }
+}

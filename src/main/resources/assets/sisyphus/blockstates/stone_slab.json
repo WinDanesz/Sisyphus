@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:stone_half_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:stone_upper_slab"
+        }
+    }
+}

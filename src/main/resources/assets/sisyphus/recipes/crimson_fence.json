@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "#S#"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:crimson_planks"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "sisyphus:crimson_fence",
+        "count": 3
+    },
+    "group": "wooden_fence"
+}

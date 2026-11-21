@@ -1,0 +1,16 @@
+[
+    {
+        "modid": "sisyphus",
+        "name": "Sisyphus Backport",
+        "description": "The one backport of all post-1.12.2 vanilla features.",
+        "version": "1.12.2",
+        "mcversion": "1.12.2",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/sisyphus",
+        "updateUrl": "https://www.curseforge.com/minecraft/mc-mods/sisyphus",
+        "authorList": [
+            "WinDanesz"
+        ],
+        "credits": "WinDanesz",
+        "logoFile": ""
+    }
+]

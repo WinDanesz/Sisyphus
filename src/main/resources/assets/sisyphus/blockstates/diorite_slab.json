@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:diorite_half_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:diorite_upper_slab"
+        }
+    }
+}

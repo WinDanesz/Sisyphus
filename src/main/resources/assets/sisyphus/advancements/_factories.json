@@ -1,0 +1,5 @@
+{
+    "conditions": {
+        "content_enabled": "com.windanesz.sisyphus.recipe.ContentEnabledCondition"
+    }
+}

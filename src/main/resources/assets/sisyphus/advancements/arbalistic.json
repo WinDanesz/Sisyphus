@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "crossbow"
+        }
+    ],
+    "parent": "sisyphus:ol_betsy",
+    "display": {
+        "icon": {
+            "item": "sisyphus:crossbow"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.arbalistic.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.arbalistic.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

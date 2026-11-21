@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_gate_open",
+    "textures": {
+        "texture": "sisyphus:blocks/warped_planks"
+    }
+}

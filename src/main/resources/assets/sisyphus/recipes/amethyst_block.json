@@ -1,0 +1,21 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "amethyst"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:amethyst_shard"
+        }
+    },
+    "result": {
+        "item": "sisyphus:amethyst_block"
+    }
+}

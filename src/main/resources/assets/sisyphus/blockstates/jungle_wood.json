@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "sisyphus:jungle_wood"
+        },
+        "axis=z": {
+            "model": "sisyphus:jungle_wood",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "sisyphus:jungle_wood",
+            "x": 90,
+            "y": 90
+        },
+        "axis=none": {
+            "model": "sisyphus:jungle_wood"
+        }
+    }
+}

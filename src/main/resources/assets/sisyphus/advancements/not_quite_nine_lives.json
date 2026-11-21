@@ -1,0 +1,37 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "respawn_anchor"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "crying_obsidian"
+        }
+    ],
+    "parent": "sisyphus:who_is_cutting_onions",
+    "display": {
+        "icon": {
+            "item": "sisyphus:respawn_anchor"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.not_quite_nine_lives.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.not_quite_nine_lives.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

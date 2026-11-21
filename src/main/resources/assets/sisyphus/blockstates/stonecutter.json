@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=east": {
+            "model": "sisyphus:stonecutter",
+            "y": 90
+        },
+        "facing=north": {
+            "model": "sisyphus:stonecutter"
+        },
+        "facing=south": {
+            "model": "sisyphus:stonecutter",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "sisyphus:stonecutter",
+            "y": 270
+        }
+    }
+}

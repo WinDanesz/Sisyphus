@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "sisyphus:blocks/cobbled_deepslate",
+        "top": "sisyphus:blocks/cobbled_deepslate",
+        "side": "sisyphus:blocks/cobbled_deepslate"
+    }
+}

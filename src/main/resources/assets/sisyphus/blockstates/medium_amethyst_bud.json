@@ -1,0 +1,30 @@
+{
+    "variants": {
+        "facing=down": {
+            "model": "sisyphus:medium_amethyst_bud",
+            "x": 180
+        },
+        "facing=east": {
+            "model": "sisyphus:medium_amethyst_bud",
+            "x": 90,
+            "y": 90
+        },
+        "facing=north": {
+            "model": "sisyphus:medium_amethyst_bud",
+            "x": 90
+        },
+        "facing=south": {
+            "model": "sisyphus:medium_amethyst_bud",
+            "x": 90,
+            "y": 180
+        },
+        "facing=up": {
+            "model": "sisyphus:medium_amethyst_bud"
+        },
+        "facing=west": {
+            "model": "sisyphus:medium_amethyst_bud",
+            "x": 90,
+            "y": 270
+        }
+    }
+}

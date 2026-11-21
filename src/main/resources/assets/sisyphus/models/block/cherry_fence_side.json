@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_side",
+    "textures": {
+        "texture": "sisyphus:blocks/cherry_planks"
+    }
+}

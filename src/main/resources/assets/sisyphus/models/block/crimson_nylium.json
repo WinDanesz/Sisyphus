@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "sisyphus:blocks/crimson_nylium_side",
+        "down": "blocks/netherrack",
+        "up": "sisyphus:blocks/crimson_nylium",
+        "north": "sisyphus:blocks/crimson_nylium_side",
+        "south": "sisyphus:blocks/crimson_nylium_side",
+        "east": "sisyphus:blocks/crimson_nylium_side",
+        "west": "sisyphus:blocks/crimson_nylium_side"
+    }
+}

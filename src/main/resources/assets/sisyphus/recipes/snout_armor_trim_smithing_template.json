@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "armor_trims"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "blackstone"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DTD",
+        "DBD",
+        "DDD"
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "T": {
+            "item": "sisyphus:snout_armor_trim_smithing_template"
+        },
+        "B": {
+            "item": "sisyphus:blackstone"
+        }
+    },
+    "result": {
+        "item": "sisyphus:snout_armor_trim_smithing_template",
+        "count": 2
+    }
+}

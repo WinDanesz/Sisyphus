@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "target"
+        }
+    ],
+    "parent": "minecraft:adventure/shoot_arrow",
+    "display": {
+        "icon": {
+            "item": "sisyphus:target"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.bullseye.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.bullseye.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

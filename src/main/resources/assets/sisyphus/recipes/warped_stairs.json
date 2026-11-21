@@ -1,0 +1,24 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:warped_planks"
+        }
+    },
+    "result": {
+        "item": "sisyphus:warped_stairs",
+        "count": 4
+    },
+    "group": "wooden_stairs"
+}

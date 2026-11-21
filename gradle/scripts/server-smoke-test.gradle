@@ -1,0 +1,264 @@
+// The server smoke test: starts a dedicated server with the mod and CraftTweaker, runs the scripts in src/serverSmokeTest/scripts,
+// waits until the server has started, generates a small area in the Overworld and the Nether, stops it, and fails if it crashed,
+// CraftTweaker logged an error or an area was not fully generated.
+//
+//   ./gradlew serverSmokeTest
+//
+// It runs in build/server-smoke-test with a new world each time, so it does not touch the run folder of the dev client, and uses its
+// own port and its own copy of the mod jar, so it can run while the client is open. The Minecraft EULA must be accepted for a server to start: the task only writes
+// eula.txt when the accept_minecraft_eula property is true (in ~/.gradle/gradle.properties, or -Paccept_minecraft_eula=true).
+
+import java.time.Duration
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
+
+configurations {
+    serverSmokeTestRuntime
+}
+
+// A small helper mod that only this server loads: its smoketest_generate command generates an area of chunks away from spawn
+sourceSets {
+    serverSmokeTest {
+        java.srcDir 'src/serverSmokeTest/java'
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+    }
+}
+
+dependencies {
+    // Only on the classpath of this server, not of runClient or runServer
+    serverSmokeTestRuntime rfg.deobf('CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.718')
+}
+
+/** Copies the console of the server to a file, and sends "stop" to it once it says that it has started. */
+class SmokeTestConsole extends OutputStream {
+    final OutputStream file
+    final CountDownLatch started = new CountDownLatch(1)
+    private final StringBuilder line = new StringBuilder()
+
+    SmokeTestConsole(OutputStream file) {
+        this.file = file
+    }
+
+    @Override
+    void write(int b) {
+        file.write(b)
+        if (b == (int) '\n') {
+            if (line.indexOf('Done (') >= 0 && line.indexOf('For help, type "help"') >= 0) {
+                started.countDown()
+            }
+            line.setLength(0)
+        } else {
+            line.append((char) b)
+        }
+    }
+
+    @Override
+    void flush() {
+        file.flush()
+    }
+
+    @Override
+    void close() {
+        file.close()
+    }
+}
+
+/** The input of the server: nothing until it has started, then the commands that are tested and "stop". Gives up after the time limit, so that it never hangs. */
+class SmokeTestInput extends InputStream {
+    /** Overworld and Nether areas generated after the start, as dimension, center chunk x and z, and radius in chunks */
+    static final List<List<Integer>> AREAS = [[0, 64, 64, 4], [-1, 16, 16, 3]]
+
+    /** Run once the server has started: /locate finds the structures of the mod, which a mixin adds to it, then the areas are generated */
+    static final List<String> SMOKE_COMMANDS = ['locate TrailRuins', 'locate OceanRuins', 'locate RuinedPortal', 'locate AbandonedCamp'] +
+            AREAS.collect { "smoketest_generate ${it.join(' ')}".toString() }
+
+    final SmokeTestConsole console
+    private final long deadline
+    private byte[] command = (SMOKE_COMMANDS.join('\n') + '\nstop\n').getBytes('UTF-8')
+    private int position = 0
+
+    SmokeTestInput(SmokeTestConsole console, Duration limit) {
+        this.console = console
+        this.deadline = System.nanoTime() + limit.toNanos()
+    }
+
+    @Override
+    int read() {
+        while (!console.started.await(500, TimeUnit.MILLISECONDS)) {
+            if (System.nanoTime() > deadline) {
+                return -1
+            }
+        }
+        return position < command.length ? command[position++] : -1
+    }
+
+    @Override
+    int read(byte[] buffer, int offset, int length) {
+        int b = read()
+        if (b < 0) {
+            return -1
+        }
+        buffer[offset] = (byte) b
+        return 1
+    }
+}
+
+def smokeDir = layout.buildDirectory.dir('server-smoke-test')
+def smokeScripts = file('src/serverSmokeTest/scripts')
+def smokeLimit = Duration.ofMinutes(8)
+
+// The plugins block of build.gradle is not visible to this file, so the task type is found through the runServer task of RFG
+def runServer = tasks.named('runServer').get()
+ClassLoader rfgLoader = runServer.class.classLoader
+Class runTaskType = Class.forName('com.gtnewhorizons.retrofuturagradle.minecraft.RunMinecraftTask', true, rfgLoader)
+def dedicatedServer = Class.forName('com.gtnewhorizons.retrofuturagradle.util.Distribution', true, rfgLoader).getField('DEDICATED_SERVER').get(null)
+
+// The dev client loads the mod from the jar of the jar task and keeps it open, so rebuilding that jar breaks every resource the client
+// reads afterwards. The server gets its own jar with the same contents and manifest instead, and never runs the jar task.
+def smokeJar = tasks.register('serverSmokeTestJar', Jar) { task ->
+    def devJar = tasks.named('jar', Jar).get()
+    task.description = 'Builds the copy of the dev jar that the server smoke test runs, so that the jar of a running client stays untouched'
+    task.with(devJar)
+    task.manifest { attributes(devJar.manifest.attributes) }
+    task.destinationDirectory = layout.buildDirectory.dir('server-smoke-test-jar')
+    task.archiveFileName = devJar.archiveFileName
+}
+
+tasks.register('serverSmokeTest', runTaskType, dedicatedServer).configure { task ->
+    group = 'verification'
+    description = 'Starts a dedicated server with CraftTweaker and the test scripts, and fails if it crashes or a script fails'
+    task.setup(project)
+    // The mixin tweaker and the AzureLib arguments are added by dependencies.gradle to every run task, this one too
+    task.dependsOn(runServer.dependsOn)
+    // Everything runServer needs except the jar task, which comes with the dev jar on its classpath
+    task.dependsOn({ runServer.taskDependencies.getDependencies(runServer).findAll { it.name != 'jar' } })
+    task.dependsOn(smokeJar)
+    task.mainClass.set(runServer.mainClass)
+    task.systemProperties(runServer.systemProperties)
+    // The classpath of runServer with the dev jar replaced by the copy. The paths are read in a closure, so that the jar task does
+    // not become a dependency through the classpath.
+    task.classpath = files({
+        File devJarFile = tasks.named('jar', Jar).get().archiveFile.get().asFile
+        File smokeJarFile = smokeJar.get().archiveFile.get().asFile
+        runServer.classpath.files.collect { it == devJarFile ? smokeJarFile : it }
+    }) + configurations.serverSmokeTestRuntime + sourceSets.serverSmokeTest.output
+    task.workingDir = smokeDir.get().asFile
+    task.ignoreExitValue = true
+    task.timeout = smokeLimit.plusMinutes(2)
+    task.outputs.upToDateWhen { false }
+
+    SmokeTestConsole console = null
+    File consoleLog = new File(task.workingDir, 'console.log')
+    task.doFirst {
+        File dir = task.workingDir
+        if (!(findProperty('accept_minecraft_eula')?.toString()?.toBoolean())) {
+            throw new GradleException('A Minecraft server only starts once the Minecraft EULA (https://aka.ms/MinecraftEULA) is accepted. '
+                    + 'To accept it for this test server, set accept_minecraft_eula=true in ~/.gradle/gradle.properties, or pass -Paccept_minecraft_eula=true.')
+        }
+        // A new world, scripts and logs each time; the config is kept, so that the defaults of a fresh file are tested only once
+        ['world', 'scripts', 'logs', 'crash-reports'].each { project.delete(new File(dir, it)) }
+        project.delete(new File(dir, 'crafttweaker.log'))
+        dir.mkdirs()
+        project.copy { from smokeScripts; into new File(dir, 'scripts') }
+        new File(dir, 'eula.txt').text = 'eula=true\n'
+        new File(dir, 'server.properties').text = [
+                'online-mode=false',
+                'server-port=25599',
+                'level-seed=sisyphus',
+                'max-tick-time=-1',
+                'snooper-enabled=false',
+                'enable-query=false',
+                'enable-rcon=false',
+        ].join('\n') + '\n'
+        console = new SmokeTestConsole(new FileOutputStream(consoleLog))
+        task.standardOutput = console
+        task.errorOutput = console
+        task.standardInput = new SmokeTestInput(console, smokeLimit)
+        logger.lifecycle("Starting the test server in ${dir}, its console goes to ${consoleLog.name}")
+    }
+
+    task.doLast {
+        console?.close()
+        File dir = task.workingDir
+        List<String> problems = []
+
+        if (console == null || console.started.count > 0) {
+            problems << "the server did not finish starting within ${smokeLimit.toMinutes()} minutes"
+        }
+        int exit = task.executionResult.get().exitValue
+        if (exit != 0) {
+            problems << "the server exited with code ${exit}"
+        }
+        File[] crashes = new File(dir, 'crash-reports').listFiles()
+        if (crashes) {
+            problems << "the server wrote a crash report: ${crashes*.name.join(', ')}"
+        }
+
+        File ctLog = new File(dir, 'crafttweaker.log')
+        if (!ctLog.exists()) {
+            problems << 'CraftTweaker wrote no crafttweaker.log, so it did not load'
+        } else {
+            List<String> lines = ctLog.readLines('UTF-8')
+            lines.findAll { it.contains('[ERROR]') || it.contains('no recipe matched') }.each { problems << "crafttweaker.log: ${it.trim()}" }
+            // Every class of the mod logged its changes, so CraftTweaker found it and the script reached it
+            ['stonecutter', 'smithing table', 'smoker', 'blast furnace', 'campfire'].each { block ->
+                if (!lines.any { it.contains("Adding a ${block} recipe") }) {
+                    problems << "crafttweaker.log has no recipe added to the ${block}"
+                }
+            }
+        }
+
+        // The commands sent after the start answered as they should
+        List<String> consoleLines = consoleLog.exists() ? consoleLog.readLines('UTF-8') : []
+        ['TrailRuins', 'OceanRuins', 'RuinedPortal', 'AbandonedCamp'].each { structure ->
+            if (!consoleLines.any { it.contains("Located ${structure} at") }) {
+                problems << "/locate ${structure} found nothing"
+            }
+        }
+
+        // Every chunk of each area was generated and populated, and the overworld one has blocks of the mod in it (deepslate at least)
+        SmokeTestInput.AREAS.each { area ->
+            int dimension = area[0]
+            int side = 2 * area[3] + 1
+            String prefix = "Smoke test area: dimension ${dimension} around chunk ${area[1]}, ${area[2]},"
+            String report = consoleLines.find { it.contains(prefix) }
+            def failure = consoleLines.find { it.contains("Smoke test area failed: dimension ${dimension} ") }
+            if (failure) {
+                problems << failure.trim()
+            } else if (report == null) {
+                problems << "the area in dimension ${dimension} was not generated"
+            } else {
+                def counts = (report =~ /(\d+) of (\d+) populated, (\d+) mod blocks/)
+                if (!counts.find() || counts.group(1) != counts.group(2) || counts.group(2).toInteger() != side * side) {
+                    problems << "not every chunk of the area in dimension ${dimension} was populated: ${report.trim()}"
+                } else if (dimension == 0 && counts.group(3).toInteger() == 0) {
+                    problems << "the overworld area has no blocks of the mod: ${report.trim()}"
+                }
+            }
+        }
+
+        // Errors of the mod itself in the server log. Two threads sometimes write onto one line, so only the text after the ERROR
+        // marker counts, not an INFO line in front of it that names the mod.
+        File serverLog = new File(dir, 'logs/latest.log')
+        if (serverLog.exists()) {
+            serverLog.readLines('UTF-8').findAll {
+                int error = it.indexOf('/ERROR]')
+                error >= 0 && it.substring(error).toLowerCase().contains('sisyphus')
+            }.each { problems << "latest.log: ${it.trim()}" }
+        }
+
+        if (problems) {
+            List<String> tail = consoleLog.exists() ? consoleLog.readLines('UTF-8').takeRight(40) : []
+            throw new GradleException("The server smoke test failed:\n  - ${problems.join('\n  - ')}\n\nLast lines of ${consoleLog}:\n${tail.join('\n')}")
+        }
+        // Forge names whichever mod was active when a chunk loaded another one, which is not always the one at fault, so this only warns
+        if (serverLog.exists()) {
+            List<String> cascades = serverLog.readLines('UTF-8').findAll { it.contains('causing cascading worldgen lag') }
+            if (cascades) {
+                logger.warn("Cascading worldgen lag was logged ${cascades.size()} times, for example:\n  ${cascades.take(3)*.trim().join('\n  ')}")
+            }
+        }
+        consoleLines.findAll { it.contains('Smoke test area: ') }.each { logger.lifecycle(it.substring(it.indexOf('Smoke test area: ')).trim()) }
+        logger.lifecycle('The server started with CraftTweaker, ran the test scripts without errors, located the ruins, generated the test areas, and stopped.')
+    }
+}

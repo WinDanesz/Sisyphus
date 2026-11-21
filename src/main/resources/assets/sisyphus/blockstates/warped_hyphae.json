@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "sisyphus:warped_hyphae"
+        },
+        "axis=z": {
+            "model": "sisyphus:warped_hyphae",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "sisyphus:warped_hyphae",
+            "x": 90,
+            "y": 90
+        },
+        "axis=none": {
+            "model": "sisyphus:warped_hyphae"
+        }
+    }
+}

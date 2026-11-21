@@ -1,0 +1,52 @@
+{
+    "variants": {
+        "rotation=0": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=1": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=2": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=3": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=4": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=5": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=6": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=7": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=8": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=9": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=10": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=11": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=12": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=13": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=14": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        },
+        "rotation=15": {
+            "model": "sisyphus:dark_oak_hanging_sign"
+        }
+    }
+}

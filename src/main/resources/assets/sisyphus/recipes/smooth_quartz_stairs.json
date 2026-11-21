@@ -1,0 +1,27 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "stone_variants"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "smooth_blocks"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:smooth_quartz"
+        }
+    },
+    "result": {
+        "item": "sisyphus:smooth_quartz_stairs",
+        "count": 4
+    }
+}

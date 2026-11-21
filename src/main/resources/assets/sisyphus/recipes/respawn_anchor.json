@@ -1,0 +1,30 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "respawn_anchor"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "crying_obsidian"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "OOO",
+        "GGG",
+        "OOO"
+    ],
+    "key": {
+        "O": {
+            "item": "sisyphus:crying_obsidian"
+        },
+        "G": {
+            "item": "minecraft:glowstone"
+        }
+    },
+    "result": {
+        "item": "sisyphus:respawn_anchor",
+        "count": 1
+    }
+}

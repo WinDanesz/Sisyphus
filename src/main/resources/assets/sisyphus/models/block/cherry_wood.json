@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "sisyphus:blocks/cherry_log",
+        "side": "sisyphus:blocks/cherry_log"
+    }
+}

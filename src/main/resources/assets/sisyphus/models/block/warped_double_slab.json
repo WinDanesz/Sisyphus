@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "sisyphus:blocks/warped_planks",
+        "particle": "sisyphus:blocks/warped_planks"
+    }
+}

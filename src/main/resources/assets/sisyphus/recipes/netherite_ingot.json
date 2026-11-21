@@ -1,0 +1,39 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "netherite"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:netherite_scrap"
+        },
+        {
+            "item": "sisyphus:netherite_scrap"
+        },
+        {
+            "item": "sisyphus:netherite_scrap"
+        },
+        {
+            "item": "sisyphus:netherite_scrap"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:netherite_ingot",
+        "count": 1
+    }
+}

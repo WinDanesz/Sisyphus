@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "deepslate"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:deepslate_tiles"
+        }
+    },
+    "result": {
+        "item": "sisyphus:deepslate_tile_wall",
+        "count": 6
+    }
+}

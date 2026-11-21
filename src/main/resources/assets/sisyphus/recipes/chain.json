@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "chain"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "N",
+        "I",
+        "N"
+    ],
+    "key": {
+        "N": {
+            "item": "minecraft:iron_nugget"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "sisyphus:chain",
+        "count": 1
+    }
+}

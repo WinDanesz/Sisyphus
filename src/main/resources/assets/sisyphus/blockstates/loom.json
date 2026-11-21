@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=east": {
+            "model": "sisyphus:loom",
+            "y": 90
+        },
+        "facing=north": {
+            "model": "sisyphus:loom"
+        },
+        "facing=south": {
+            "model": "sisyphus:loom",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "sisyphus:loom",
+            "y": 270
+        }
+    }
+}

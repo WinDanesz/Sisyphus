@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "furnaces"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "smooth_blocks"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "IFI",
+        "SSS"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "F": {
+            "item": "minecraft:furnace"
+        },
+        "S": {
+            "item": "sisyphus:smooth_stone"
+        }
+    },
+    "result": {
+        "item": "sisyphus:blast_furnace",
+        "count": 1
+    }
+}

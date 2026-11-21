@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:blackstone_double_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:blackstone_double_slab"
+        }
+    }
+}

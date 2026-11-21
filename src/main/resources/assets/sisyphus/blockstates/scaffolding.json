@@ -1,0 +1,52 @@
+{
+    "variants": {
+        "bottom=false,distance=0": {
+            "model": "sisyphus:scaffolding_stable"
+        },
+        "bottom=false,distance=1": {
+            "model": "sisyphus:scaffolding_stable"
+        },
+        "bottom=false,distance=2": {
+            "model": "sisyphus:scaffolding_stable"
+        },
+        "bottom=false,distance=3": {
+            "model": "sisyphus:scaffolding_stable"
+        },
+        "bottom=false,distance=4": {
+            "model": "sisyphus:scaffolding_stable"
+        },
+        "bottom=false,distance=5": {
+            "model": "sisyphus:scaffolding_stable"
+        },
+        "bottom=false,distance=6": {
+            "model": "sisyphus:scaffolding_stable"
+        },
+        "bottom=false,distance=7": {
+            "model": "sisyphus:scaffolding_stable"
+        },
+        "bottom=true,distance=0": {
+            "model": "sisyphus:scaffolding_unstable"
+        },
+        "bottom=true,distance=1": {
+            "model": "sisyphus:scaffolding_unstable"
+        },
+        "bottom=true,distance=2": {
+            "model": "sisyphus:scaffolding_unstable"
+        },
+        "bottom=true,distance=3": {
+            "model": "sisyphus:scaffolding_unstable"
+        },
+        "bottom=true,distance=4": {
+            "model": "sisyphus:scaffolding_unstable"
+        },
+        "bottom=true,distance=5": {
+            "model": "sisyphus:scaffolding_unstable"
+        },
+        "bottom=true,distance=6": {
+            "model": "sisyphus:scaffolding_unstable"
+        },
+        "bottom=true,distance=7": {
+            "model": "sisyphus:scaffolding_unstable"
+        }
+    }
+}

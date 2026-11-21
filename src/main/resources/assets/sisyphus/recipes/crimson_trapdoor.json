@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "sisyphus:crimson_planks"
+        }
+    },
+    "result": {
+        "item": "sisyphus:crimson_trapdoor",
+        "count": 2
+    },
+    "group": "wooden_trapdoor"
+}

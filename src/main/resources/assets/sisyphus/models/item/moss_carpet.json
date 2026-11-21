@@ -1,0 +1,7 @@
+{
+    "parent": "block/carpet",
+    "textures": {
+        "particle": "sisyphus:blocks/moss_block",
+        "wool": "sisyphus:blocks/moss_block"
+    }
+}

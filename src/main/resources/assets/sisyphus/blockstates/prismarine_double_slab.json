@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:prismarine_double_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:prismarine_double_slab"
+        }
+    }
+}

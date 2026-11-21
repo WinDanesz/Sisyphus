@@ -1,0 +1,18 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "flowers"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:wither_rose"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:black_dye",
+        "count": 1
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "lit=false": {
+            "model": "sisyphus:black_candle_cake"
+        },
+        "lit=true": {
+            "model": "sisyphus:black_candle_cake_lit"
+        }
+    }
+}

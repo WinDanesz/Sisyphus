@@ -1,0 +1,58 @@
+{
+    "multipart": [
+        {
+            "apply": [
+                {
+                    "model": "sisyphus:bamboo1_age0"
+                },
+                {
+                    "model": "sisyphus:bamboo2_age0"
+                },
+                {
+                    "model": "sisyphus:bamboo3_age0"
+                },
+                {
+                    "model": "sisyphus:bamboo4_age0"
+                }
+            ],
+            "when": {
+                "age": "0"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "sisyphus:bamboo1_age1"
+                },
+                {
+                    "model": "sisyphus:bamboo2_age1"
+                },
+                {
+                    "model": "sisyphus:bamboo3_age1"
+                },
+                {
+                    "model": "sisyphus:bamboo4_age1"
+                }
+            ],
+            "when": {
+                "age": "1"
+            }
+        },
+        {
+            "apply": {
+                "model": "sisyphus:bamboo_small_leaves"
+            },
+            "when": {
+                "leaves": "small"
+            }
+        },
+        {
+            "apply": {
+                "model": "sisyphus:bamboo_large_leaves"
+            },
+            "when": {
+                "leaves": "large"
+            }
+        }
+    ]
+}

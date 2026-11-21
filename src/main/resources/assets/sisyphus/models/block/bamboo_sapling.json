@@ -1,0 +1,6 @@
+{
+    "parent": "block/tinted_cross",
+    "textures": {
+        "cross": "sisyphus:blocks/bamboo_stage0"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "package": "com.windanesz.sisyphus.mixin.minecraft",
+    "required": false,
+    "refmap": "mixins.sisyphus.refmap.json",
+    "target": "@env(DEFAULT)",
+    "minVersion": "0.8.5",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+        "MixinBlockEnchantmentTable",
+        "MixinBlockFlowerPot",
+        "MixinBlockMagma",
+        "MixinBlockSoulSand",
+        "MixinCommandLocate",
+        "MixinDesertPyramid",
+        "MixinEntityBoat",
+        "MixinItemStack",
+        "MixinVillagePieces",
+        "MixinWorldGenDesertWells",
+        "MixinWorldServer"
+    ],
+    "server": [],
+    "client": [
+        "MixinConfigListEntry",
+        "MixinGuiConfigEntries",
+        "MixinGuiMainMenu",
+        "MixinLayerArmorBase",
+        "MixinModelBiped",
+        "MixinRenderBoat",
+        "MixinRenderGlobal",
+        "MixinTileEntityFlowerPot"
+    ]
+}

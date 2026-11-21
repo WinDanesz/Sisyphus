@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_brick_variants"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone_slab",
+            "data": 6
+        }
+    },
+    "result": {
+        "item": "sisyphus:chiseled_nether_bricks",
+        "count": 1
+    }
+}

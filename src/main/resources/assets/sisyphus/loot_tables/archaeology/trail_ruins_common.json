@@ -1,0 +1,244 @@
+{
+    "pools": [
+        {
+            "name": "main",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "entryName": "emerald",
+                    "weight": 2,
+                    "name": "minecraft:emerald"
+                },
+                {
+                    "type": "item",
+                    "entryName": "wheat",
+                    "weight": 2,
+                    "name": "minecraft:wheat"
+                },
+                {
+                    "type": "item",
+                    "entryName": "wooden_hoe",
+                    "weight": 2,
+                    "name": "minecraft:wooden_hoe"
+                },
+                {
+                    "type": "item",
+                    "entryName": "clay",
+                    "weight": 2,
+                    "name": "minecraft:clay_ball"
+                },
+                {
+                    "type": "item",
+                    "entryName": "brick",
+                    "weight": 2,
+                    "name": "minecraft:brick"
+                },
+                {
+                    "type": "item",
+                    "entryName": "yellow_dye",
+                    "weight": 2,
+                    "name": "minecraft:dye",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 11
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "blue_dye",
+                    "weight": 2,
+                    "name": "minecraft:dye",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "light_blue_dye",
+                    "weight": 2,
+                    "name": "minecraft:dye",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 12
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "white_dye",
+                    "weight": 2,
+                    "name": "minecraft:dye",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 15
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "orange_dye",
+                    "weight": 2,
+                    "name": "minecraft:dye",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 14
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "magenta_stained_glass_pane",
+                    "weight": 1,
+                    "name": "minecraft:stained_glass_pane",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "pink_stained_glass_pane",
+                    "weight": 1,
+                    "name": "minecraft:stained_glass_pane",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 6
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "blue_stained_glass_pane",
+                    "weight": 1,
+                    "name": "minecraft:stained_glass_pane",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 11
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "light_blue_stained_glass_pane",
+                    "weight": 1,
+                    "name": "minecraft:stained_glass_pane",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "red_stained_glass_pane",
+                    "weight": 1,
+                    "name": "minecraft:stained_glass_pane",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 14
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "yellow_stained_glass_pane",
+                    "weight": 1,
+                    "name": "minecraft:stained_glass_pane",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "purple_stained_glass_pane",
+                    "weight": 1,
+                    "name": "minecraft:stained_glass_pane",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "entryName": "spruce_hanging_sign",
+                    "weight": 1,
+                    "name": "minecraft:sign"
+                },
+                {
+                    "type": "item",
+                    "entryName": "oak_hanging_sign",
+                    "weight": 1,
+                    "name": "minecraft:sign"
+                },
+                {
+                    "type": "item",
+                    "entryName": "gold_nugget",
+                    "weight": 1,
+                    "name": "minecraft:gold_nugget"
+                },
+                {
+                    "type": "item",
+                    "entryName": "coal",
+                    "weight": 1,
+                    "name": "minecraft:coal"
+                },
+                {
+                    "type": "item",
+                    "entryName": "wheat_seeds",
+                    "weight": 1,
+                    "name": "minecraft:wheat_seeds"
+                },
+                {
+                    "type": "item",
+                    "entryName": "beetroot_seeds",
+                    "weight": 1,
+                    "name": "minecraft:beetroot_seeds"
+                },
+                {
+                    "type": "item",
+                    "entryName": "dead_bush",
+                    "weight": 1,
+                    "name": "minecraft:deadbush"
+                },
+                {
+                    "type": "item",
+                    "entryName": "flower_pot",
+                    "weight": 1,
+                    "name": "minecraft:flower_pot"
+                },
+                {
+                    "type": "item",
+                    "entryName": "string",
+                    "weight": 1,
+                    "name": "minecraft:string"
+                },
+                {
+                    "type": "item",
+                    "entryName": "lead",
+                    "weight": 1,
+                    "name": "minecraft:lead"
+                }
+            ]
+        }
+    ]
+}

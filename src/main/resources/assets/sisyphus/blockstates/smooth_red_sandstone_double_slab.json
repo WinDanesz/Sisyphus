@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom": {
+            "model": "sisyphus:smooth_red_sandstone_double_slab"
+        },
+        "half=top": {
+            "model": "sisyphus:smooth_red_sandstone_double_slab"
+        }
+    }
+}

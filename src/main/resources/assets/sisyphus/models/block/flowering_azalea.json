@@ -1,0 +1,7 @@
+{
+    "parent": "sisyphus:block/template_azalea",
+    "textures": {
+        "side": "sisyphus:blocks/flowering_azalea_side",
+        "top": "sisyphus:blocks/flowering_azalea_top"
+    }
+}

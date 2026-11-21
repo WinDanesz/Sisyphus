@@ -1,0 +1,58 @@
+{
+    "pools": [
+        {
+            "name": "main",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "entryName": "archer_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:archer_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "miner_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:miner_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "prize_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:prize_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "skull_pottery_sherd",
+                    "weight": 1,
+                    "name": "sisyphus:skull_pottery_sherd"
+                },
+                {
+                    "type": "item",
+                    "entryName": "diamond",
+                    "weight": 1,
+                    "name": "minecraft:diamond"
+                },
+                {
+                    "type": "item",
+                    "entryName": "tnt",
+                    "weight": 1,
+                    "name": "minecraft:tnt"
+                },
+                {
+                    "type": "item",
+                    "entryName": "gunpowder",
+                    "weight": 1,
+                    "name": "minecraft:gunpowder"
+                },
+                {
+                    "type": "item",
+                    "entryName": "emerald",
+                    "weight": 1,
+                    "name": "minecraft:emerald"
+                }
+            ]
+        }
+    ]
+}

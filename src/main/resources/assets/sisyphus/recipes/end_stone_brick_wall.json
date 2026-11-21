@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "stone_variants"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:end_bricks"
+        }
+    },
+    "result": {
+        "item": "sisyphus:end_stone_brick_wall",
+        "count": 6
+    }
+}

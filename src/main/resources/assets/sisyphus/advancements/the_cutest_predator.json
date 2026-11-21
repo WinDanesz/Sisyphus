@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "axolotl"
+        }
+    ],
+    "parent": "minecraft:husbandry/root",
+    "display": {
+        "icon": {
+            "item": "sisyphus:axolotl_bucket"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.the_cutest_predator.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.the_cutest_predator.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

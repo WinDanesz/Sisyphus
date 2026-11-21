@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "loom"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:paper"
+        },
+        {
+            "item": "minecraft:skull",
+            "data": 1
+        }
+    ],
+    "result": {
+        "item": "sisyphus:skull_banner_pattern",
+        "count": 1
+    }
+}

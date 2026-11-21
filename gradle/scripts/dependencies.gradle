@@ -1,0 +1,117 @@
+apply from: 'gradle/scripts/helpers.gradle'
+
+repositories {
+    // Other repositories described by default:
+    // CleanroomMC: https://maven.cleanroommc.com
+    maven {
+        name 'AzureDoom'
+        url 'https://maven.azuredoom.com/mods'
+        content { includeGroup 'mod.azure.azurelib' }
+    }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name 'CurseMaven'
+                url 'https://cursemaven.com'
+            }
+        }
+        filter {
+            includeGroup 'curse.maven'
+        }
+    }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name 'Modrinth'
+                url 'https://api.modrinth.com/maven'
+            }
+        }
+        filter {
+            includeGroup 'maven.modrinth'
+        }
+    }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name 'BlameJared'
+                url 'https://maven.blamejared.com'
+            }
+        }
+        filter {
+            includeGroup 'CraftTweaker2'
+        }
+    }
+    mavenLocal() // Must be last for caching to work
+}
+
+dependencies {
+    // AzureLib animates the panda, the fox and the wandering trader. It is a required dependency of the mod.
+    implementation rfg.deobf('mod.azure.azurelib:azurelib-forge-1.12.2:1.1.5')
+    // The recipe lists of the workstations are shown in Just Enough Items, which is not needed to play. The same file is used by the
+    // game in the dev environment.
+    compileOnly rfg.deobf('curse.maven:jei-238222:3043174')
+    runtimeOnly rfg.deobf('curse.maven:jei-238222:3043174')
+    // FermiumBooter is only needed to compile the hook that registers the mixins with it when it is installed in place of MixinBooter.
+    // It is never loaded without it, and it is not shipped or needed to play.
+    compileOnly 'maven.modrinth:fermiumbooter:1.6.4'
+    // CraftTweaker scripts can change the recipes of the stonecutter and the smithing table. It is only needed to
+    // compile the classes that CraftTweaker loads itself when it is installed; it is not shipped or needed to play.
+    compileOnly rfg.deobf('CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.718')
+    // Headless model-baking tests need Minecraft's vector math classes.
+    testRuntimeOnly('org.lwjgl.lwjgl:lwjgl_util:2.9.4-nightly-20150209') { transitive = false }
+    testRuntimeOnly('org.lwjgl.lwjgl:lwjgl:2.9.4-nightly-20150209') { transitive = false }
+    // Include StripLatestForgeRequirements by default for the dev env, saves everyone a hassle
+    runtimeOnly 'com.cleanroommc:strip-latest-forge-requirements:1.0'
+    // Include OSXNarratorBlocker by default for the dev env, for M1+ Macs
+    runtimeOnly 'com.cleanroommc:osxnarratorblocker:1.0'
+
+    // Example - Dependency descriptor:
+    // 'com.google.code.gson:gson:2.8.6' << group: com.google.code.gson, name:gson, version:2.8.6
+    // 'group:name:version:classifier' where classifier is optional
+
+    // Example - Deobfuscating dependencies:
+    // rfg.deobf('curse.maven:had-enough-items-557549:4543375')
+    // By wrapping a dependency descriptor in rfg.deobf() method call, the dependency is queued for deobfuscation
+    // When deobfuscating, RFG respects the mapping_channel + mapping_version stated in gradle.properties
+
+    // Example - CurseMaven dependencies:
+    // 'curse.maven:had-enough-items-557549:4543375' << had-enough-items = project slug, 557549 = project id, 4543375 = file id
+    // Full documentation: https://cursemaven.com/
+
+    // Example - Modrinth dependencies:
+    // 'maven.modrinth:jei:4.16.1.1000' << jei = project name, 4.16.1.1000 = file version
+    // Full documentation: https://docs.modrinth.com/docs/tutorials/maven/
+
+    // Common dependency types (configuration):
+    // implementation = dependency available at both compile time and runtime
+    // runtimeOnly = runtime dependency
+    // compileOnly = compile time dependency
+    // annotationProcessor = annotation processing dependencies
+    // embed = bundle dependencies into final output artifact (no relocation)
+
+    // Transitive dependencies:
+    // (Dependencies that your dependency depends on)
+    // If you wish to exclude transitive dependencies in the described dependencies
+    // Use a closure as such:
+    // implementation ('com.google.code.gson:gson:2.8.6') {
+    //     transitive = false
+    // }
+}
+
+// AzureLib's embedded Mixin must also be bootstrapped when running from the dev classpath.
+tasks.configureEach {
+    if (!it.hasProperty('tweakClasses') || !it.hasProperty('extraArgs')) return
+    dependsOn tasks.named('generateForgeSrgMappings')
+    tweakClasses.add('org.spongepowered.asm.launch.MixinTweaker')
+    extraArgs.addAll('--mixin', 'azurelib.mixins.json')
+    extraJvmArgs.add('-Dmixin.env.remapRefMap=true')
+    extraJvmArgs.add(tasks.named('generateForgeSrgMappings').flatMap { it.srgToMcp }.map {
+        '-Dmixin.env.refMapRemappingFile=' + it.asFile.absolutePath
+    })
+    doFirst {
+        // The inherited dev helpers require MixinBooter's extended Mixin classes.
+        // Prefer them to AzureLib's embedded vanilla Mixin when both are present.
+        def booters = classpath.filter { it.name.startsWith('mixinbooter-') }
+        classpath = booters + (classpath - booters)
+    }
+}

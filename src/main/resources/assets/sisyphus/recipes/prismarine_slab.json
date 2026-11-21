@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "prismarine"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:prismarine",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "sisyphus:prismarine_slab",
+        "count": 6
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "sisyphus:blocks/respawn_anchor_side2",
+        "down": "sisyphus:blocks/respawn_anchor_bottom",
+        "up": "sisyphus:blocks/respawn_anchor_top",
+        "north": "sisyphus:blocks/respawn_anchor_side2",
+        "south": "sisyphus:blocks/respawn_anchor_side2",
+        "east": "sisyphus:blocks/respawn_anchor_side2",
+        "west": "sisyphus:blocks/respawn_anchor_side2"
+    }
+}

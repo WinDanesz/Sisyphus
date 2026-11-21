@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=up": {
+            "model": "sisyphus:soul_torch"
+        },
+        "facing=east": {
+            "model": "sisyphus:soul_torch_wall"
+        },
+        "facing=south": {
+            "model": "sisyphus:soul_torch_wall",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "sisyphus:soul_torch_wall",
+            "y": 180
+        },
+        "facing=north": {
+            "model": "sisyphus:soul_torch_wall",
+            "y": 270
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "signs"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP",
+        "PPP",
+        " S "
+    ],
+    "key": {
+        "P": {
+            "item": "sisyphus:warped_planks"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "sisyphus:warped_sign",
+        "count": 3
+    },
+    "group": "sign"
+}

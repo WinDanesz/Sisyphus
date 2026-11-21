@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "sisyphus:basalt"
+        },
+        "axis=z": {
+            "model": "sisyphus:basalt",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "sisyphus:basalt",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

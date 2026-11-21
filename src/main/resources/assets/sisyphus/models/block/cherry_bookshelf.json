@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "sisyphus:blocks/cherry_planks",
+        "side": "sisyphus:blocks/cherry_bookshelf"
+    }
+}

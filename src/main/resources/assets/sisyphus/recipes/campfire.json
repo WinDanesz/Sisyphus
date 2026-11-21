@@ -1,0 +1,37 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "campfire"
+        }
+    ],
+    "type": "forge:ore_shaped",
+    "pattern": [
+        " S ",
+        "SCS",
+        "LLL"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "C": [
+            {
+                "item": "minecraft:coal",
+                "data": 0
+            },
+            {
+                "item": "minecraft:coal",
+                "data": 1
+            }
+        ],
+        "L": {
+            "type": "forge:ore_dict",
+            "ore": "logWood"
+        }
+    },
+    "result": {
+        "item": "sisyphus:campfire",
+        "count": 1
+    }
+}

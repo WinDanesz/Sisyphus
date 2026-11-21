@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "sisyphus:birch_sign_particle"
+        },
+        "facing=south": {
+            "model": "sisyphus:birch_sign_particle"
+        },
+        "facing=east": {
+            "model": "sisyphus:birch_sign_particle"
+        },
+        "facing=west": {
+            "model": "sisyphus:birch_sign_particle"
+        }
+    }
+}

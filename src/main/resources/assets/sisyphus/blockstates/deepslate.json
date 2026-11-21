@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "sisyphus:deepslate"
+        },
+        "axis=z": {
+            "model": "sisyphus:deepslate",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "sisyphus:deepslate",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

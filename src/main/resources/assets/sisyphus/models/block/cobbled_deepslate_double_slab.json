@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "sisyphus:blocks/cobbled_deepslate",
+        "particle": "sisyphus:blocks/cobbled_deepslate"
+    }
+}

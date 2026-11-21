@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "netherite"
+        }
+    ],
+    "parent": "sisyphus:hidden_in_the_depths",
+    "display": {
+        "icon": {
+            "item": "sisyphus:netherite_chestplate"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.cover_me_in_debris.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.cover_me_in_debris.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

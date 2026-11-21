@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "nether_brick_variants"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:quartz_block",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "sisyphus:quartz_bricks",
+        "count": 4
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "bamboo_wood"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "sisyphus:bamboo"
+        },
+        {
+            "item": "sisyphus:bamboo"
+        },
+        {
+            "item": "sisyphus:bamboo"
+        },
+        {
+            "item": "sisyphus:bamboo"
+        },
+        {
+            "item": "sisyphus:bamboo"
+        },
+        {
+            "item": "sisyphus:bamboo"
+        },
+        {
+            "item": "sisyphus:bamboo"
+        },
+        {
+            "item": "sisyphus:bamboo"
+        },
+        {
+            "item": "sisyphus:bamboo"
+        }
+    ],
+    "result": {
+        "item": "sisyphus:bamboo_block"
+    }
+}

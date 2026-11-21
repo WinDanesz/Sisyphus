@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "sisyphus:blocks/stripped_spruce_log_top",
+        "side": "sisyphus:blocks/stripped_spruce_log"
+    }
+}

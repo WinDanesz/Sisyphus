@@ -1,0 +1,33 @@
+{
+    "conditions": [
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "advancements"
+        },
+        {
+            "type": "sisyphus:content_enabled",
+            "set": "cat"
+        }
+    ],
+    "parent": "minecraft:husbandry/tame_an_animal",
+    "display": {
+        "icon": {
+            "item": "minecraft:fish"
+        },
+        "title": {
+            "translate": "advancements.sisyphus.complete_catalogue.title"
+        },
+        "description": {
+            "translate": "advancements.sisyphus.complete_catalogue.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "done": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
