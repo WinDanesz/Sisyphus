@@ -13,6 +13,8 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class TileEntityBarrel extends TileEntityLockableLoot {
 
@@ -76,6 +78,12 @@ public class TileEntityBarrel extends TileEntityLockableLoot {
             ItemStackHelper.saveAllItems(compound, this.contents);
         }
         return compound;
+    }
+
+    // Forge swaps a mod tile entity on any state change, which would drop the open GUI when OPEN flips
+    @Override
+    public boolean shouldRefresh(World world, BlockPos pos, IBlockState oldState, IBlockState newState) {
+        return oldState.getBlock() != newState.getBlock();
     }
 
     @Override
