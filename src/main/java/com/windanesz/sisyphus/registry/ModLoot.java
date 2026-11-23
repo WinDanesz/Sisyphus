@@ -1,7 +1,9 @@
 package com.windanesz.sisyphus.registry;
 
+import com.google.gson.JsonObject;
 import com.windanesz.sisyphus.SisyphusBackport;
 import net.minecraft.item.Item;
+import net.minecraft.util.JsonUtils;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.*;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
@@ -23,8 +25,36 @@ public final class ModLoot {
     public static final int STRONGHOLD_EMPTY_WEIGHT = 39;
     public static final int MONSTER_ROOM_EMPTY_WEIGHT = 35;
 
+    private static final ResourceLocation PANDA = new ResourceLocation(SisyphusBackport.MODID, "entities/panda");
+
     private ModLoot() {
     } // No instances!
+
+    public static boolean isItemTurnedOff(String type, JsonObject entry) {
+        if (!"item".equals(type) || !JsonUtils.isString(entry, "name")) {
+            return false;
+        }
+        ResourceLocation name = new ResourceLocation(JsonUtils.getString(entry, "name"));
+        return SisyphusBackport.MODID.equals(name.getNamespace()) && !Item.REGISTRY.containsKey(name);
+    }
+
+    public static void logSkippedEntry(JsonObject entry) {
+        if (SisyphusBackport.logger != null) {
+            SisyphusBackport.logger.debug("Left {} out of a loot table, as the config turned it off", JsonUtils.getString(entry, "name"));
+        }
+    }
+
+    // Here and not in the table, as bamboo can be turned off while pandas stay
+    @SubscribeEvent
+    public static void onPandaLootLoad(LootTableLoadEvent event) {
+        Item bamboo = ModItems.getOrNull("bamboo");
+        if (bamboo == null || !PANDA.equals(event.getName())) {
+            return;
+        }
+        LootEntry[] entries = {new LootEntryItem(bamboo, 1, 0, new LootFunction[0], new LootCondition[0], SisyphusBackport.MODID + "_bamboo")};
+        event.getTable().addPool(new LootPool(entries, new LootCondition[0], new RandomValueRange(1), new RandomValueRange(0),
+                SisyphusBackport.MODID + "_bamboo"));
+    }
 
     /**
      * There are no bastions, so the Pigstep disc and the snout pattern are rare nether fortress chest loot instead.

@@ -13,6 +13,7 @@
         "MixinCommandLocate",
         "MixinDesertPyramid",
         "MixinEntityBoat",
+        "MixinForgeHooks",
         "MixinItemStack",
         "MixinVillagePieces",
         "MixinWorldGenDesertWells",
