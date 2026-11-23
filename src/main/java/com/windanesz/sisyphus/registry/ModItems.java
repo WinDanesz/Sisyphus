@@ -194,13 +194,17 @@ public final class ModItems {
     }
 
     // Signs and hanging signs get their items with the other items, as one item places two blocks. ModdedDeepslateOres gives its ores theirs
+    public static boolean hasBlockItem(Block block) {
+        return !NO_BLOCK_ITEM.contains(block.getRegistryName().getPath()) && !(block instanceof BlockDoubleSlabBase) && !(block instanceof BlockSign)
+                && !(block instanceof BlockCandleCake) && !(block instanceof BlockDeepslateOreVariant);
+    }
+
     @Nullable
     private static Item blockItem(Block block) {
-        String name = block.getRegistryName().getPath();
-        if (NO_BLOCK_ITEM.contains(name) || block instanceof BlockDoubleSlabBase || block instanceof BlockSign || block instanceof BlockCandleCake
-                || block instanceof BlockDeepslateOreVariant) {
+        if (!hasBlockItem(block)) {
             return null;
         }
+        String name = block.getRegistryName().getPath();
         if (block instanceof BlockSlabBase) {
             return new ItemBlockSlab(block, ModBlocks.get(name.substring(0, name.length() - "_slab".length()) + "_double_slab"));
         }

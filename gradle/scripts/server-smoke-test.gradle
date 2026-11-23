@@ -68,8 +68,8 @@ class SmokeTestInput extends InputStream {
     /** Overworld and Nether areas generated after the start, as dimension, center chunk x and z, and radius in chunks */
     static final List<List<Integer>> AREAS = [[0, 64, 64, 4], [-1, 16, 16, 3]]
 
-    /** Run once the server has started: /locate finds the structures of the mod, which a mixin adds to it, then the areas are generated */
-    static final List<String> SMOKE_COMMANDS = ['locate TrailRuins', 'locate OceanRuins', 'locate RuinedPortal', 'locate AbandonedCamp'] +
+    /** Run once the server has started: /locate finds the structures of the mod, which a mixin adds to it, every loot table of the mod is loaded, then the areas are generated */
+    static final List<String> SMOKE_COMMANDS = ['locate TrailRuins', 'locate OceanRuins', 'locate RuinedPortal', 'locate AbandonedCamp', 'smoketest_loot'] +
             AREAS.collect { "smoketest_generate ${it.join(' ')}".toString() }
 
     final SmokeTestConsole console
@@ -216,6 +216,14 @@ tasks.register('serverSmokeTest', runTaskType, dedicatedServer).configure { task
             }
         }
 
+        // Every loot table of the mod loaded. One that names an item the config turned off still has to, as a mixin leaves that entry out
+        String loot = consoleLines.find { it.contains('Smoke test loot: ') }
+        if (loot == null) {
+            problems << 'the loot tables were not checked'
+        } else if (!loot.endsWith('failed: []')) {
+            problems << loot.substring(loot.indexOf('Smoke test loot: ')).trim()
+        }
+
         // Every chunk of each area was generated and populated, and the overworld one has blocks of the mod in it (deepslate at least)
         SmokeTestInput.AREAS.each { area ->
             int dimension = area[0]
@@ -258,7 +266,7 @@ tasks.register('serverSmokeTest', runTaskType, dedicatedServer).configure { task
                 logger.warn("Cascading worldgen lag was logged ${cascades.size()} times, for example:\n  ${cascades.take(3)*.trim().join('\n  ')}")
             }
         }
-        consoleLines.findAll { it.contains('Smoke test area: ') }.each { logger.lifecycle(it.substring(it.indexOf('Smoke test area: ')).trim()) }
-        logger.lifecycle('The server started with CraftTweaker, ran the test scripts without errors, located the ruins, generated the test areas, and stopped.')
+        consoleLines.findAll { it.contains('Smoke test loot: ') || it.contains('Smoke test area: ') }.each { logger.lifecycle(it.substring(it.indexOf('Smoke test ')).trim()) }
+        logger.lifecycle('The server started with CraftTweaker, ran the test scripts without errors, located the ruins, loaded the loot tables, generated the test areas, and stopped.')
     }
 }
