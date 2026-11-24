@@ -25,8 +25,6 @@ public final class ModLoot {
     public static final int STRONGHOLD_EMPTY_WEIGHT = 39;
     public static final int MONSTER_ROOM_EMPTY_WEIGHT = 35;
 
-    private static final ResourceLocation PANDA = new ResourceLocation(SisyphusBackport.MODID, "entities/panda");
-
     private ModLoot() {
     } // No instances!
 
@@ -42,18 +40,6 @@ public final class ModLoot {
         if (SisyphusBackport.logger != null) {
             SisyphusBackport.logger.debug("Left {} out of a loot table, as the config turned it off", JsonUtils.getString(entry, "name"));
         }
-    }
-
-    // Here and not in the table, as bamboo can be turned off while pandas stay
-    @SubscribeEvent
-    public static void onPandaLootLoad(LootTableLoadEvent event) {
-        Item bamboo = ModItems.getOrNull("bamboo");
-        if (bamboo == null || !PANDA.equals(event.getName())) {
-            return;
-        }
-        LootEntry[] entries = {new LootEntryItem(bamboo, 1, 0, new LootFunction[0], new LootCondition[0], SisyphusBackport.MODID + "_bamboo")};
-        event.getTable().addPool(new LootPool(entries, new LootCondition[0], new RandomValueRange(1), new RandomValueRange(0),
-                SisyphusBackport.MODID + "_bamboo"));
     }
 
     /**
